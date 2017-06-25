@@ -1,0 +1,31 @@
+{
+  "name": "google-maps-spike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+  {
+  "considerIp": "false",
+  "wifiAccessPoints": [
+    {
+        "macAddress": "00:25:9c:cf:1c:ac",
+        "signalStrength": -43,
+        "signalToNoiseRatio": 0
+    },
+    {
+        "macAddress": "00:25:9c:cf:1c:ad",
+        "signalStrength": -55,
+        "signalToNoiseRatio": 0
+    }
+  ]
+}
+}
