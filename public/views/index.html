@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Google Maps Spike</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="vendors/bootstrap.min.css">
-    <script src="vendors/angular-route-min.js" charset="utf-8"></script>
-    <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <h1>Google Maps Spike</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Travel Journal</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <script src="vendors/angular-route-min.js" charset="utf-8"></script>
+  <script src="https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY" charset="utf-8"></script>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+</head>
+
+<body ng-app="myApp">
+  <h1>Travel Journal</h1>
+  <div ng-controller="JournalController as jc">
+
+      <div class="header">
+        <h2>Login</h2>
+        <input type="text" placeholder="username" ng-model="jc.nameInput">
+        <input type="text" placeholder="password" ng-model="jc.passwordInput">
+        <button type="button" class="logInButton" ng-click="jc.logIn()">Log In</button>
+      </div> // end header //
+
+
+    <div class="map">
+      < Geolocation Map Goes Here>
+    </div>
+
+  </div>  // end controller //
+
+
+
+</body>
+
 </html>
