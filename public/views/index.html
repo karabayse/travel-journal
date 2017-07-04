@@ -19,9 +19,9 @@
   <header><h1>Travel Journal</h1></header>
 
 
-  <div ng-controller="JournalController as jc">
+  <div ng-controller="JournalController as jc" ng-show="jc.loggedIn">
 
-      <div ng-show="jc.showReigsterDiv" class="register">
+      <div ng-show="jc.showRegisterDiv" class="register">
         <h2>Login</h2>
         <input type="text" placeholder="username" ng-model="jc.nameInput">
         <input type="password" placeholder="password" ng-model="jc.passwordInput">
@@ -29,7 +29,7 @@
         <p ng-click="jc.toggleLogin()"><a href="#">Register</a></p>
       </div>
 
-      <div ng-hide="jc.showReigsterDiv" class="register">
+      <div ng-hide="jc.showRegisterDiv" class="register">
         <h2>Register</h2>
         <input type="text" placeholder="username" ng-model="jc.registerNameInput">
         <input type="password" placeholder="password" ng-model="jc.registerPasswordInput">
@@ -38,8 +38,6 @@
       </div>
 
   </div>  // end controller //
-
-
 
 </body>
 

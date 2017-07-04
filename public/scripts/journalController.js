@@ -6,7 +6,6 @@ myApp.controller('JournalController', function(JournalService){
   console.log('in the JournalController');
   var vm = this;
   vm.showRegisterDiv = true;
-  vm.deleteBtnShow = true;
   vm.loggedIn = true;
   vm.hasAccess = false;
 
@@ -42,7 +41,6 @@ myApp.controller('JournalController', function(JournalService){
 
 vm.toggleLogin = function() {
   vm.showRegisterDiv = !vm.showRegisterDiv;
-  vm.deleteBtnShow = !vm.deleteBtnShow;
 }; // end toggleLogin
 
 vm.logOut = function() {
