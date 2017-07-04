@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Travel Journal</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="vendors/bootstrap.min.css">
-  <script src="vendors/angular-route-min.js" charset="utf-8"></script>
-  <script src="https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY" charset="utf-8"></script>
   <script src="vendors/angular.min.js" charset="utf-8"></script>
-  <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <!-- <script src="https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY" charset="utf-8"></script> -->
+  <script src="scripts/journalController.js" charset="utf-8"></script>
+  <script src="scripts/services/journalService.js" charset="utf-8"></script>
+  <title>Travel Journal</title>
 </head>
 
 <body ng-app="myApp">
+
   <h1>Travel Journal</h1>
+
   <div ng-controller="JournalController as jc">
 
       <div class="header">

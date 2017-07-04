@@ -20,7 +20,7 @@ myApp.controller('JournalController', function(JournalService){
         vm.hasAccess = false;
       }
     }); // end JournalService
-    vm.toggleLogin();
+  //  vm.toggleLogin();
   }; // end logIn function
 
   vm.register = function(){
