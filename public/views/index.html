@@ -15,21 +15,27 @@
 
 <body ng-app="myApp">
 
-  <h1>Travel Journal</h1>
+
+  <header><h1>Travel Journal</h1></header>
+
 
   <div ng-controller="JournalController as jc">
 
-      <div class="header">
+      <div ng-show="jc.showReigsterDiv" class="register">
         <h2>Login</h2>
         <input type="text" placeholder="username" ng-model="jc.nameInput">
-        <input type="text" placeholder="password" ng-model="jc.passwordInput">
-        <button type="button" class="logInButton" ng-click="jc.logIn()">Log In</button>
-      </div> // end header //
+        <input type="password" placeholder="password" ng-model="jc.passwordInput">
+        <button type="button" class="btn btn-default" ng-click="jc.logIn()">Log In</button>
+        <p ng-click="jc.toggleLogin()"><a href="#">Register</a></p>
+      </div>
 
-
-    <div class="map">
-      < Geolocation Map Goes Here>
-    </div>
+      <div ng-hide="jc.showReigsterDiv" class="register">
+        <h2>Register</h2>
+        <input type="text" placeholder="username" ng-model="jc.registerNameInput">
+        <input type="password" placeholder="password" ng-model="jc.registerPasswordInput">
+        <button class="btn btn-default" ng-click="jc.register()">Register</button>
+        <p ng-click="jc.toggleLogin()"><a href="#">Log In</a></p>
+      </div>
 
   </div>  // end controller //
 

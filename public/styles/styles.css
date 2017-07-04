@@ -1,9 +1,14 @@
-h1 {
-  background-color: Yellow;
+header {
   text-align: center;
+  text-shadow: 2px 2px OrangeRed;
+  letter-spacing: 2px;
+  background-color: Coral;
+  font-family: Courier;
 }
 
-.header {
-  background-color: LemonChiffon;
+.register {
   text-align: center;
+  background-color: PaleTurquoise;
+  font-family: Courier;
+  height: 600px;
 }

@@ -14,7 +14,15 @@ myApp.service('JournalService', function($http){
     });
   }; // end logIn function
 
-
+sv.register = function(credentials){
+  return $http({
+    method: 'POST',
+    url: '/register',
+    data: credentials
+  }).then(function(response){
+    console.log('back from register attempt:', response);
+  });
+}; // end register
 
 
 }); // end service
