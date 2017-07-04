@@ -1,6 +1,6 @@
-/*---- Service ----*/
+/*---- Login Service ----*/
 
-myApp.service('JournalService', function($http){
+myApp.service('LoginService', function($http){
   var sv = this;
 
   sv.logIn = function(credentials){

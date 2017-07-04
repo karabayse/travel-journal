@@ -1,52 +1,17 @@
-/*---- Controller ----*/
+/*---- Journal Controller ----*/
 
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.controller('JournalController', function(JournalService){
-  console.log('in the JournalController');
-  var vm = this;
-  vm.showRegisterDiv = true;
-  vm.loggedIn = true;
-  vm.hasAccess = false;
-
-  vm.logIn = function(){
-    console.log('clicked log in');
-    var registerObject = {
-      username: vm.nameInput,
-      password: vm.passwordInput
-    }; // end registerObject
-    JournalService.logIn(registerObject).then(function(){
-      console.log('from controller', JournalService.response);
-      if (JournalService.response.data === 'Match!') {
-        vm.hasAccess = true;
-      } else {
-        vm.hasAccess = false;
-      }
-    }); // end JournalService
-   vm.toggleLogin();
-  }; // end logIn function
-
-  vm.register = function(){
-    console.log('clicked register');
-    var registerObject = {
-      username: vm.registerNameInput,
-      password: vm.registerPasswordInput
-    }; // end registerObject
-    JournalService.register(registerObject).then(function() {
-      vm.registerNameInput = '';
-      vm.registerPasswordInput = '';
-      vm.toggleLogin();
-    }); // end JournalService.register function
-  }; // end register
-
-vm.toggleLogin = function() {
-  vm.showRegisterDiv = !vm.showRegisterDiv;
-}; // end toggleLogin
-
-vm.logOut = function() {
-  vm.loggedIn = true;
-  vm.nameInput = '';
-  vm.passwordInput = '';
-}; // end logOut
-
-}); // end controller
+myApp.config(function($routeProvider, $locationProvider) {
+  $routeProvider.when('/', {
+    templateUrl: 'views/login.html',
+    controller: 'LoginController as lc'
+  }).when('/entry', {
+    templateUrl: 'views/entry.html',
+    controller: 'EntryController as ec'
+  }).when('/collection', {
+    temmplateUrl: 'views/collection.html',
+    controller: 'CollectionController as cc'
+  }).otherwise('/');
+  $locationProvider.html5Mode(true);
+}); // end config

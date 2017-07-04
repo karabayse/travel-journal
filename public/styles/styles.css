@@ -5,6 +5,10 @@ header {
   font-family: Courier;
 }
 
+.container {
+  text-align: center;
+}
+
 .register {
   text-align: center;
   background-color: PaleTurquoise;

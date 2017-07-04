@@ -9,35 +9,25 @@
   <script src="vendors/angular-route.min.js" charset="utf-8"></script>
   <!-- <script src="https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY" charset="utf-8"></script> -->
   <script src="scripts/journalController.js" charset="utf-8"></script>
-  <script src="scripts/services/journalService.js" charset="utf-8"></script>
+  <script src="scripts/loginController.js" charset="utf-8"></script>
+  <script src="scripts/services/loginService.js" charset="utf-8"></script>
   <title>Travel Journal</title>
 </head>
 
 <body ng-app="myApp">
 
+  <div class="container">
+    <nav>
+      <base href="/">
+      <a href="/login">Login</a>
+      <a href="/entry">Entry</a>
+      <a href="/collection">Collection</a>
+    </nav>
 
-  <header><h1>Travel Journal</h1></header>
+    <main ng-view></main>
 
+  </div>
 
-  <div ng-controller="JournalController as jc" ng-show="jc.loggedIn">
-
-      <div ng-show="jc.showRegisterDiv" class="register">
-        <h2>Login</h2>
-        <input type="text" placeholder="username" ng-model="jc.nameInput">
-        <input type="password" placeholder="password" ng-model="jc.passwordInput">
-        <button type="button" class="btn btn-default" ng-click="jc.logIn()">Log In</button>
-        <p ng-click="jc.toggleLogin()"><a href="#">Register</a></p>
-      </div>
-
-      <div ng-hide="jc.showRegisterDiv" class="register">
-        <h2>Register</h2>
-        <input type="text" placeholder="username" ng-model="jc.registerNameInput">
-        <input type="password" placeholder="password" ng-model="jc.registerPasswordInput">
-        <button class="btn btn-default" ng-click="jc.register()">Register</button>
-        <p ng-click="jc.toggleLogin()"><a href="#">Log In</a></p>
-      </div>
-
-  </div>  // end controller //
 
 </body>
 
