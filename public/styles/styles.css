@@ -3,6 +3,7 @@ header {
   letter-spacing: 2px;
   background-color: Coral;
   font-family: Courier;
+  position: fixed;
 }
 
 .container {

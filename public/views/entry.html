@@ -1,5 +1,19 @@
 <header><h1>Journal Entry</h1></header>
 
-<div class="">
 
+<form class="form">
+
+<div class="entry">
+  <input type="date" id="date" placeholder="date" ng-model="ec.dateInput">
+  <input type="text" id="city" placeholder="city" ng-model="ec.cityInput">
+  <input type="text" id="place" placeholder="place" ng-model="ec.placeInput">
+  <textarea id="textarea" rows="4" cols="50"></textarea>
+  <ng-map>
+
+  </ng-map>
+  <input type='file' onchange="readURL(this);" />
+   <img id="blah" src="#" alt="your image" />
+  <button type="button" id="save" ng-click="ec.journalEntry()">Save</button>
 </div>
+
+</form>

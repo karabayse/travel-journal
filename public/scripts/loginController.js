@@ -9,12 +9,12 @@ myApp.controller('LoginController', function(LoginService){
 
   vm.logIn = function(){
     console.log('clicked log in');
-    var registerObject = {
+    var loginObject = {
       username: vm.nameInput,
       password: vm.passwordInput
     }; // end registerObject
-    LoginService.logIn(registerObject).then(function() {
-      console.log('from controller', LoginService.response);
+    LoginService.logIn(loginObject).then(function() {
+      console.log('from login controller', LoginService.response);
       if (LoginService.response.data === 'Match!') {
         vm.hasAccess = true;
       } else {
