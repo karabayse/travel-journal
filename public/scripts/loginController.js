@@ -42,6 +42,7 @@ vm.toggleLogin = function() {
 }; // end toggleLogin
 
 vm.logOut = function() {
+  console.log('clicked Log Out');
   vm.loggedIn = true;
   vm.nameInput = '';
   vm.passwordInput = '';

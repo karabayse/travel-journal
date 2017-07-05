@@ -19,4 +19,8 @@
       <p ng-click="lc.toggleLogin()"><a href="#">Log In</a></p>
     </div>
 
+    <div ng-show="lc.hasAccess">
+      <button class="btn btn-default" ng-click="lc.logOut()">Log Out</button>
+    </div>
+
 </div>
