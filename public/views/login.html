@@ -1,10 +1,14 @@
+<div class="jumbotron">
 
-<header><h1>Travel Journal</h1></header>
+<h1>Travel Journal</h1>
+
+</div>
 
 <div ng-controller="LoginController as lc" ng-show="lc.loggedIn">
 
     <div ng-show="lc.showRegisterDiv" class="register">
       <h2>Login</h2>
+      <img src="https://img1.etsystatic.com/124/0/8787852/il_340x270.1023802847_s70r.jpg">
       <input type="text" placeholder="username" ng-model="lc.nameInput">
       <input type="password" placeholder="password" ng-model="lc.passwordInput">
       <button type="button" class="btn btn-default" ng-click="lc.logIn()">Log In</button>
@@ -24,3 +28,5 @@
     </div>
 
 </div>
+
+<footer></footer>

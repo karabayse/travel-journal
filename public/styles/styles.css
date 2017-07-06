@@ -1,3 +1,10 @@
+.jumbotron {
+  text-align: center;
+  text-shadow: 4px 4px AliceBlue;
+  font-family: Courier;
+  background-color: DarkSlateGrey !important;*/
+}
+
 header {
   text-align: center;
   letter-spacing: 2px;
@@ -14,5 +21,5 @@ header {
   text-align: center;
   background-color: PaleTurquoise;
   font-family: Courier;
-  height: 400px;
+  height: 600px;
 }

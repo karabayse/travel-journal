@@ -1,6 +1,6 @@
 /*---- Login Controller ----*/
 
-myApp.controller('LoginController', function(LoginService){
+myApp.controller('LoginController', function(LoginService, $location){
   console.log('in the LoginController');
   var vm = this;
   vm.showRegisterDiv = true;
@@ -17,6 +17,8 @@ myApp.controller('LoginController', function(LoginService){
       console.log('from login controller', LoginService.response);
       if (LoginService.response.data === 'Match!') {
         vm.hasAccess = true;
+        $location.path('/entry');
+        console.log('has access');
       } else {
         vm.hasAccess = false;
       }

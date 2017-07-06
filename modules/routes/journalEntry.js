@@ -20,4 +20,11 @@ router.get('/', function(req, res) {
   console.log('journalObject');
 });
 
+router.post('/entry', function(req, res) {
+  console.log('journalEntry url hit', req.body);
+  var newEntry = req.body;
+  journalModel( newEntry ).save();
+  res.sendStatus(201);
+}); // end router.post for journalEntry
+
 module.exports = router;

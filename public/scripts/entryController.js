@@ -1,8 +1,6 @@
 /*--- Entry Controller ----*/
 
-var myApp = angular.module('myApp', ['ngRoute']);
-
-myApp.controller('EntryController', function(){
+myApp.controller('EntryController', [  function(){
   console.log('in EntryController');
   var vm = this;
 
@@ -12,7 +10,8 @@ myApp.controller('EntryController', function(){
       city: vm.cityInput,
       place: vm.placeInput,
       entry: vm.entryInput,
-      map: vm.mapInput,
+      latitude: vm.latitude,
+      longitude: vm.longitude,
       photo: vm.photoInput
     }; // end entryObject
     EntryService.journalEntry(entryObject).then(function() {
@@ -24,4 +23,4 @@ myApp.controller('EntryController', function(){
     }); // end EntryService.journalEntry
   }; // end journalEntry function
 
-}); // end controller
+}]); // end controller
