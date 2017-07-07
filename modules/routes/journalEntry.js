@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 mongoose.connect('localhost:27017/journal');
 var journalSchema = new mongoose.Schema({
-  date: Number,
+  date: Date,
   city: String,
   place: String,
   entry: String,
@@ -18,13 +18,20 @@ var journalModel = mongoose.model('journalModel', journalSchema);
 
 router.get('/', function(req, res) {
   console.log('journalObject');
-});
+  journalModel.find().then(function(entry){
+    res.send(entry);
+  });
+}); // end entry get call
 
-router.post('/entry', function(req, res) {
+router.post('/', function(req, res) {
   console.log('journalEntry url hit', req.body);
   var newEntry = req.body;
-  journalModel( newEntry ).save();
-  res.sendStatus(201);
+  journalModel( newEntry ).save().then(function(){
+      res.sendStatus(201);
+  }).catch(function(err){
+    console.log('error', err);
+  });
+
 }); // end router.post for journalEntry
 
 module.exports = router;

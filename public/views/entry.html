@@ -1,7 +1,55 @@
-<p>
-  Hi!
-</p>
+<div class="jumbotron" id="entryJumbotron">
+  <h1>Journal Entry</h1>
+</div>
 
-  <div ng-controller="EntryController as ec">
 
-  </div>
+<div ng-controller="EntryController as ec">
+
+
+
+  <div id="entryBody" col-sm-12>
+
+  <input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput">
+
+  <p>Journal Entry Date</p>
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myDate").value;
+      document.getElementById("demo").innerHTML = x;
+  }
+
+  <button onclick="myFunction()">Try it</button>
+
+  </script>
+
+
+
+  <input type="text" placeholder="city" id="city" ng-model="ec.cityInput">
+
+  <input type="text" placeholder="place" id="place" ng-model="ec.placeInput">
+
+  <textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea
+
+
+    <div class="map" id="map">
+        <ng-map center="[{{ec.latitude}}, {{ec.longitude}}]">
+          <marker position="[{{ec.latitude}}, {{ec.longitude}}]"></marker>
+          <custom-marker id="marker" position="[{{ec.latitude}}, {{ec.longitude}}]"></custom-marker>
+        </ng-map>
+        <p>Location: <small><input ng-model="uc.locationIn" type="text" placeholder="{{log.location}}"></small></p>
+        <p>Latitude: <small><input ng-model="uc.lat" type="text" placeholder="{{log.latitude | number : 4}}"></small></p><!-- {{value | number : fractionSize}} -->
+        <p>Longitude: <small><input ng-model="uc.lng" type="text" placeholder="{{log.longitude | number : 4}}"></small></p><!-- {{value | number : fractionSize}} -->
+      </div>
+
+  <button type="button" id="submit" ng-click="ec.journalEntry()">Save</button>
+
+</div> // end body div
+
+
+
+
+
+</div> // end Entry Controller //

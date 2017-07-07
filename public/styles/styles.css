@@ -1,8 +1,16 @@
-.jumbotron {
+#loginJumbotron {
   text-align: center;
-  text-shadow: 4px 4px AliceBlue;
+  text-shadow: 3px 3px AliceBlue;
   font-family: Courier;
   background-color: DarkSlateGrey !important;*/
+}
+
+#entryJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px LightGrey;
+  font-family: Courier;
+  border-style: groove;
+  background-color: Tomato !important;*/
 }
 
 header {
@@ -22,4 +30,16 @@ header {
   background-color: PaleTurquoise;
   font-family: Courier;
   height: 600px;
+}
+
+#entryBody {
+  background-color: LightCyan;
+  border-style: groove;
+  padding-top: 50px;
+  height: 600px;
+  vertical-align: middle;
+}
+
+#entryDate {
+
 }

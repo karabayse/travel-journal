@@ -7,6 +7,10 @@ myApp.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/login.html',
     controller: 'LoginController',
     controllerAs: 'LoginController as lc'
+  }).when('/geolocation', {
+    templateUrl: 'views/entry.html',
+    controller: 'EntryController',
+    controllerAs: 'EntryController as ec'
   }).when('/entry', {
     templateUrl: 'views/entry.html',
     controller: 'EntryController',

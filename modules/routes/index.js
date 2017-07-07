@@ -12,7 +12,12 @@ router.use(bodyParser.json());
 router.get('/', function(req, res) {
   console.log('base url hit');
   res.sendFile(path.resolve('public/views/index.html'));
-}); // end router.get
+}); // end router.get for index.html
+
+router.get('/entry', function(req, res) {
+  console.log('entry url hit');
+  res.sendFile(path.resolve('views/entry.html'));
+}); // end router.get for entry.html
 
 router.post('/', function(req, res) {
 console.log('base post hit', req.body);
