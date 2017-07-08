@@ -7,44 +7,40 @@
 
 
 
-  <div id="entryBody" col-sm-12>
 
-  <input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput">
+
+<form class="form-horizontal" role="form">
+
+<div class="form-group" id="entryBody">
 
   <p>Journal Entry Date</p>
-
-  <p id="demo"></p>
-
-  <script>
-  function myFunction() {
-      var x = document.getElementById("myDate").value;
-      document.getElementById("demo").innerHTML = x;
-  }
-
-  <button onclick="myFunction()">Try it</button>
-
-  </script>
-
-
+  <input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput">
 
   <input type="text" placeholder="city" id="city" ng-model="ec.cityInput">
 
   <input type="text" placeholder="place" id="place" ng-model="ec.placeInput">
 
-  <textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea
+  <textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea>
 
 
-    <div class="map" id="map">
-        <ng-map center="[{{ec.latitude}}, {{ec.longitude}}]">
-          <marker position="[{{ec.latitude}}, {{ec.longitude}}]"></marker>
-          <custom-marker id="marker" position="[{{ec.latitude}}, {{ec.longitude}}]"></custom-marker>
-        </ng-map>
-        <p>Location: <small><input ng-model="uc.locationIn" type="text" placeholder="{{log.location}}"></small></p>
-        <p>Latitude: <small><input ng-model="uc.lat" type="text" placeholder="{{log.latitude | number : 4}}"></small></p><!-- {{value | number : fractionSize}} -->
-        <p>Longitude: <small><input ng-model="uc.lng" type="text" placeholder="{{log.longitude | number : 4}}"></small></p><!-- {{value | number : fractionSize}} -->
-      </div>
+
+
+
+
+
+
+<button ng-click="ec.getLocation()">Get Position</button>
+
+<div id="mapholder" ng-map="ec.showPosition()"></div>
+
+
+
+
 
   <button type="button" id="submit" ng-click="ec.journalEntry()">Save</button>
+
+
+</form> // end form
 
 </div> // end body div
 

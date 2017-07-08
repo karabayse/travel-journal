@@ -2,6 +2,7 @@
   text-align: center;
   text-shadow: 3px 3px AliceBlue;
   font-family: Courier;
+  border-style: groove;
   background-color: DarkSlateGrey !important;*/
 }
 
@@ -21,6 +22,10 @@ header {
   position: fixed;
 }
 
+.loginDiv {
+  border-style: groove;
+}
+
 .container {
   text-align: center;
 }
@@ -38,6 +43,8 @@ header {
   padding-top: 50px;
   height: 600px;
   vertical-align: middle;
+  /*position: fixed;*/
+  bottom: 0;
 }
 
 #entryDate {
