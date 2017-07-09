@@ -30,11 +30,14 @@
 
   <span><button ng-click="ec.getLocation()">Get Position</button><span>
   <br>
+  <br>
   <span><div id="mapholder" ng-map="ec.showPosition()"></div><span>
   <br>
 
 
-
+  <span><button type="button" ng-click="ec.showPicker()">Upload Photo</button></span>
+  <br>
+  <br>
 
   <span><button type="button" id="submit" ng-click="ec.journalEntry()">Save</button><span>
   <br>
@@ -50,6 +53,7 @@
       {{ data.entry }}
       {{ data.latitude }}
       {{ data.longitude }}
+      <img ng-src="{{ data.photo }}">
       {{ data.photo }}
     </div>
   </div>
