@@ -6,9 +6,9 @@
 <div ng-controller="EntryController as ec">
 
 
-  <nav>
-    <a href="/archive">Archive</a>
-    <a href="/geolocations">Locations</a>
+  <nav class="navbar">
+    <strong><a href="/archive">Archive</a></strong>
+    <strong><a href="/geolocations">Locations</a></strong>
   </nav>
 
 
@@ -38,6 +38,18 @@
   <span><button type="button" id="submit" ng-click="ec.journalEntry()">Save</button><span>
 
 
+  <div class="journalEntries" data-ng-init="ec.showEntries()">
+    <h3>Journal Entries</h3>
+    <div class="col-sm-3" ng-repeat="data in ec.entries">
+      {{ data.date}}
+      {{ data.city }}
+      {{ data.place }}
+      {{ data.entry }}
+      {{ data.latitude }}
+      {{ data.longitude }}
+      {{ data.photo }}
+    </div>
+  </div>
 
   </div> // end body div
 

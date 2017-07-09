@@ -77,4 +77,13 @@ myApp.controller('EntryController', function(EntryService){
     }); // end EntryService.journalEntry
   }; // end journalEntry function
 
+  // function to show entries -> also in archiveController.js
+  vm.showEntries = function() {
+    console.log('in showEntries');
+    EntryService.getEntry().then(function() {
+      vm.entries = EntryService.data;
+      console.log('back in ArchiveController with:', vm.entries);
+    });
+  }; // end showEntries
+
 }); // end controller

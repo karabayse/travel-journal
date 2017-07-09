@@ -1,8 +1,22 @@
 <div class="jumbotron" id="archiveJumbotron">
-  <h1>Journal Entry Archive</h1>
+  <h1>Archive</h1>
 </div>
 
 
-<div ng-controller="ArchiveController as ac" ng-init="ac.getEntry()">
 
-<p></p>
+<div ng-controller="ArchiveController as ac">
+
+  <nav class="navbar">
+    <strong><a href="/geolocations">Locations</a></strong>
+    <strong><a href="/entry">New Entry</a></strong>
+  </nav>
+
+
+
+  <div class="journalEntries" ng-init="ec.showEntries()">
+    <h3>Journal Entries</h3>
+  </div>
+
+
+
+</div> // end controller

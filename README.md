@@ -22,7 +22,7 @@ Technologies
 - [X] MongoDB
 - [X] Express.js
 - [X] Node.js
-- [X] Google Map API
+- [X] Google Maps API
 - [ ] Filestack
 
 
