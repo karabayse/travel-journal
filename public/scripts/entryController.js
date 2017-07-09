@@ -14,9 +14,9 @@ myApp.controller('EntryController', function(EntryService){
     } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
-    EntryService.getLocation(vm.showPosition).then(function() {
-      console.log('from getLocation:', EntryService.response);
-  });
+    // EntryService.getLocation(vm.showPosition).then(function() {
+    //   console.log('from getLocation:', EntryService.response);
+  // });
 }; // end getLocation
 
   vm.showPosition = function(position) {
@@ -36,7 +36,7 @@ myApp.controller('EntryController', function(EntryService){
   };
 
     var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
-    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+    var marker = new google.maps.Marker({position:vm.latlon,map:map,title:"You are here!"});
 }; // end showPosition
 
   vm.showError = function(error) {

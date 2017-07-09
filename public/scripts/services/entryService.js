@@ -21,6 +21,7 @@ myApp.service('EntryService', function($http) {
       url: '/location'
     }).then(function(response){
       console.log('back from getLocation get:', response);
+      sv.data = response.data;
     });
   }; // end getLocation
 
@@ -42,6 +43,7 @@ myApp.service('EntryService', function($http) {
       url: '/position'
     }).then(function(response){
       console.log('back from getPosition get:', response);
+      sv.data = response.data;
     });
   }; // end getPosition
 

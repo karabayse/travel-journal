@@ -14,6 +14,22 @@
   background-color: Tomato !important;*/
 }
 
+#archiveJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px Peru;
+  font-family: Courier;
+  border-style: groove;
+  background-color: Purple !important;*/
+}
+
+#geolocationsJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px Teal;
+  font-family: Courier;
+  border-style: groove;
+  background-color: Yellow !important;*/
+}
+
 header {
   text-align: center;
   letter-spacing: 2px;
