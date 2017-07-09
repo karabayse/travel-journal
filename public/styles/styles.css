@@ -57,14 +57,18 @@ header {
   background-color: LightCyan;
   border-style: groove;
   padding-top: 50px;
-  height: 600px;
+  height: 1000px;
   vertical-align: middle;
   /*position: fixed;*/
   bottom: 0;
 }
 
-#entryDate {
+#mapholder {
+  align-content: center;
+}
 
+.journalEntries {
+  font-family: Georgia;
 }
 
 .navbar {

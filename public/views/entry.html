@@ -16,30 +16,33 @@
 
   <div id="entryBody">
 
-  <p>Journal Entry Date</p>
-  <span><input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput"></span>
 
-  <span><input type="text" placeholder="city" id="city" ng-model="ec.cityInput"></span>
-
-  <span><input type="text" placeholder="place" id="place" ng-model="ec.placeInput"></span>
-
-  <span><textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea><span>
-
+  <label><input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput"></label>
+  <br>
+  <label><input type="text" placeholder="city" id="city" ng-model="ec.cityInput"></label>
+  <br>
+  <label><input type="text" placeholder="place" id="place" ng-model="ec.placeInput"></label>
+  <br>
+  <label><textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea><label>
+  <br>
 
 
 
   <span><button ng-click="ec.getLocation()">Get Position</button><span>
-
+  <br>
   <span><div id="mapholder" ng-map="ec.showPosition()"></div><span>
+  <br>
 
 
 
 
   <span><button type="button" id="submit" ng-click="ec.journalEntry()">Save</button><span>
+  <br>
 
 
   <div class="journalEntries" data-ng-init="ec.showEntries()">
     <h3>Journal Entries</h3>
+    <br>
     <div class="col-sm-3" ng-repeat="data in ec.entries">
       {{ data.date}}
       {{ data.city }}
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  </div> // end body div
+</div>
 
 
-</div> // end Entry Controller //
+</div> <!--end Entry Controller //
