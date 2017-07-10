@@ -12,9 +12,9 @@ myApp.config(function($routeProvider, $locationProvider) {
     controller: 'EntryController',
     controllerAs: 'EntryController as ec'
   }).when('/archive', {
-    temmplateUrl: 'views/archive.html',
-    controller: 'ArchiveController',
-    controllerAs: 'ArchiveController as ac'
+    templateUrl: 'views/archive.html',
+    controller: 'EntryController',
+    controllerAs: 'EntryController as ec'
   }).when('/geolocations', {
     templateUrl: 'views/geolocations.html',
     controller: 'GeolocationsController',

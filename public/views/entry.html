@@ -25,6 +25,7 @@
   <br>
   <label><textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea><label>
   <br>
+  <br>
 
 
 
@@ -36,27 +37,15 @@
 
 
   <span><button type="button" ng-click="ec.showPicker()">Upload Photo</button></span>
+  <div ng-repeat="photo in ec.img">
+  <img ng-src="{{ photo.imgUrl }}" class="images">
+  </div>
   <br>
   <br>
 
   <span><button type="button" id="submit" ng-click="ec.journalEntry()">Save</button><span>
   <br>
 
-
-  <div class="journalEntries" data-ng-init="ec.showEntries()">
-    <h3>Journal Entries</h3>
-    <br>
-    <div class="col-sm-3" ng-repeat="data in ec.entries">
-      {{ data.date}}
-      {{ data.city }}
-      {{ data.place }}
-      {{ data.entry }}
-      {{ data.latitude }}
-      {{ data.longitude }}
-      <img ng-src="{{ data.photo }}">
-      {{ data.photo }}
-    </div>
-  </div>
 
 </div>
 

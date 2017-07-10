@@ -66,7 +66,7 @@ myApp.controller('EntryController', function(EntryService, $scope){
       entry: vm.entryInput,
       latitude: vm.latitude,
       longitude: vm.longitude,
-      photo: vm.photo
+      imgUrl: vm.img
     }; // end entryObject
     EntryService.journalEntry(entryObject).then(function() {
       console.log('from entry controller', EntryService.response);
@@ -86,11 +86,10 @@ myApp.controller('EntryController', function(EntryService, $scope){
       console.log('upload ->', (response.filesUploaded[0].url));
       vm.img = response.filesUploaded[0].url;
       console.log('vm.img ->', vm.img);
-      $scope.$apply();
+      // $scope.$apply();
     });
   }; // end filestack function
 
-  // function to show entries -> also in archiveController.js
   vm.showEntries = function() {
     console.log('in showEntries');
     EntryService.getEntry().then(function() {
@@ -98,5 +97,12 @@ myApp.controller('EntryController', function(EntryService, $scope){
       console.log('back in ArchiveController with:', vm.entries);
     });
   }; // end showEntries
+
+  vm.delete = function(index) {
+    console.log('in delete function');
+      EntryService.delete(vm.entries[index]._id).then(function() {
+        vm.showEntries();
+      });
+  }; // end delete function
 
 }); // end controller

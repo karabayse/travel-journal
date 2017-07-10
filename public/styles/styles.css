@@ -11,7 +11,7 @@
   text-shadow: 2px 2px LightGrey;
   font-family: Courier;
   border-style: groove;
-  background-color: Tomato !important;*/
+  background-color: DarkRed !important;*/
 }
 
 #archiveJumbotron {
@@ -28,14 +28,6 @@
   font-family: Courier;
   border-style: groove;
   background-color: Yellow !important;*/
-}
-
-header {
-  text-align: center;
-  letter-spacing: 2px;
-  background-color: Coral;
-  font-family: Courier;
-  position: fixed;
 }
 
 .loginDiv {
@@ -58,9 +50,7 @@ header {
   border-style: groove;
   padding-top: 50px;
   height: 1000px;
-  vertical-align: middle;
-  /*position: fixed;*/
-  bottom: 0;
+  /*background-image: url("http://wallpapercave.com/wp/r4AwAvf.jpg")*/
 }
 
 #mapholder {

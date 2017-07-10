@@ -4,7 +4,7 @@
 
 
 
-<div ng-controller="ArchiveController as ac">
+<div ng-controller="EntryController as ec">
 
   <nav class="navbar">
     <strong><a href="/geolocations">Locations</a></strong>
@@ -13,8 +13,26 @@
 
 
 
-  <div class="journalEntries" ng-init="ec.showEntries()">
+  <div class="journalEntries" data-ng-init="ec.showEntries()">
     <h3>Journal Entries</h3>
+    <br>
+    <div class="col-sm-4" ng-repeat="data in ec.entries">
+      {{ data.date }}
+      <br>
+      {{ data.city }}
+      <br>
+      {{ data.place }}
+      <br>
+      {{ data.entry }}
+      <br>
+      {{ data.latitude }}
+      <br>
+      {{ data.longitude }}
+      <br>
+      <img ng-src="{{ data.imgUrl }}">
+      <br>
+      <button type="button" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
+    </div>
   </div>
 
 

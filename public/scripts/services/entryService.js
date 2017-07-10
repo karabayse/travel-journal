@@ -69,5 +69,13 @@ myApp.service('EntryService', function($http) {
     });
   }; // end getEntry
 
+  sv.delete = function( id ){
+    return $http({
+      method: 'DELETE',
+      url: '/journalEntry/' + id,
+    }).then(function(response) {
+      console.log('Archive Service delete entry:', response);
+    });
+  };
 
 }); // end service

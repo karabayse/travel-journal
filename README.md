@@ -23,7 +23,7 @@ Technologies
 - [X] Express.js
 - [X] Node.js
 - [X] Google Maps API
-- [ ] Filestack
+- [X] Filestack
 
 
 Stretch Goals

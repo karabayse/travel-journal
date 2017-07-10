@@ -34,4 +34,16 @@ router.post('/', function(req, res) {
 
 }); // end router.post for journalEntry
 
+router.delete('/:id', function(req, res) {
+  var id = req.params.id;
+  console.log(id);
+  journalModel.remove( {_id: id }).then(function(err) {
+    if(!err) {
+      res.send('No error!');
+    } else {
+      res.send('error');
+    }
+  });
+}); // end router.delete
+
 module.exports = router;
