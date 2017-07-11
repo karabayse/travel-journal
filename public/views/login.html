@@ -1,16 +1,11 @@
-<div class="jumbotron" id="loginJumbotron">
-
-<h1>Travel Journal</h1>
-
-</div id="loginDiv">
+<header class="header" id="loginHeader"><h1>Travelogue</h1></header>
 
 <div ng-controller="LoginController as lc" ng-show="lc.loggedIn">
 
+<div class="loginDiv">
     <div ng-show="lc.showRegisterDiv" class="register">
-      <h2>Login</h2>
-      <img src="https://img1.etsystatic.com/124/0/8787852/il_340x270.1023802847_s70r.jpg">
-      <!-- <img src="http://www.hdiphonewallpaper.com/uploads/image/Other/Paper%20airplane.jpg" id="airplane"> -->
-      <!-- <img src="http://wallpapercave.com/wp/r4AwAvf.jpg"> -->
+      <img src="styles/road.jpg" alt="">
+      <h2 class="loginRegister">Login</h2>
       <input type="text" placeholder="username" ng-model="lc.nameInput">
       <input type="password" placeholder="password" ng-model="lc.passwordInput">
       <button type="button" class="btn btn-default" ng-click="lc.logIn()">Log In</button>
@@ -18,7 +13,8 @@
     </div>
 
     <div ng-hide="lc.showRegisterDiv" class="register">
-      <h2>Register</h2>
+      <img src="styles/road.jpg" alt="">
+      <h2 class="loginRegister">Register</h2>
       <input type="text" placeholder="username" ng-model="lc.registerNameInput">
       <input type="password" placeholder="password" ng-model="lc.registerPasswordInput">
       <button class="btn btn-default" ng-click="lc.register()">Register</button>
@@ -28,7 +24,6 @@
     <div ng-show="lc.hasAccess">
       <button class="btn btn-default" ng-click="lc.logOut()">Log Out</button>
     </div>
-
 </div>
 
-<footer></footer>
+<h3><footer>Not all those who wander are lost</footer></h3>

@@ -1,20 +1,20 @@
-<div class="jumbotron" id="entryJumbotron">
-  <h1>Journal Entry</h1>
-</div>
+<header class="jumbotron" id=entryJumbotron><h1>Journal Entry</h1></header>
 
 
 <div ng-controller="EntryController as ec">
 
 
+<div class="container">
   <nav class="navbar">
     <strong><a href="/archive">Archive</a></strong>
     <strong><a href="/geolocations">Locations</a></strong>
   </nav>
+</div>
 
 
 
 
-  <div id="entryBody">
+  <div class="container" id="entryBody">
 
 
   <label><input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput"></label>

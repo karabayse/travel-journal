@@ -1,23 +1,34 @@
-#loginJumbotron {
-  text-align: center;
-  text-shadow: 3px 3px AliceBlue;
-  font-family: Courier;
-  border-style: groove;
-  background-color: DarkSlateGrey !important;*/
+#loginHeader {
+  font-family: Copperplate;
+  text-shadow: 2px 2px CornflowerBlue;
+  letter-spacing: 2px;
+  background-size: 50% 100%;
+}
+
+.loginRegister {
+  font-family: Josefin Slab;
 }
 
 #entryJumbotron {
   text-align: center;
-  text-shadow: 2px 2px LightGrey;
-  font-family: Courier;
+  text-shadow: 2px 2px Chocolate;
+  font-family: Josefin Slab;
+  background-color: Lavender !important;*/
   border-style: groove;
-  background-color: DarkRed !important;*/
+  /*background-img: url("camera_journal.jpg")*/
+}
+
+#entryBody {
+  /*background-image: url("lake.jpg");*/
+  /*padding-top: 50px;*/
+  height: 900px;
+  /*background-image: url("http://wallpapercave.com/wp/r4AwAvf.jpg")*/
 }
 
 #archiveJumbotron {
   text-align: center;
   text-shadow: 2px 2px Peru;
-  font-family: Courier;
+  font-family: Josefin Slab;
   border-style: groove;
   background-color: Purple !important;*/
 }
@@ -25,32 +36,9 @@
 #geolocationsJumbotron {
   text-align: center;
   text-shadow: 2px 2px Teal;
-  font-family: Courier;
+  font-family: Josefin Slab;
   border-style: groove;
   background-color: Yellow !important;*/
-}
-
-.loginDiv {
-  border-style: groove;
-}
-
-.container {
-  text-align: center;
-}
-
-.register {
-  text-align: center;
-  background-color: PaleTurquoise;
-  font-family: Courier;
-  height: 600px;
-}
-
-#entryBody {
-  background-color: LightCyan;
-  border-style: groove;
-  padding-top: 50px;
-  height: 1000px;
-  /*background-image: url("http://wallpapercave.com/wp/r4AwAvf.jpg")*/
 }
 
 #mapholder {
@@ -61,25 +49,22 @@
   font-family: Georgia;
 }
 
-.navbar {
+/*.navbar {
   margin-left:50px;
   margin-right:50px;
-  background-color: AliceBlue;
-}
+}*/
 
 .navbar a {
+  align-content: center;
   color: Purple;
-  margin-left:30px;
-  margin-right:30px;
-  padding-left:30px;
-  padding-right:30px;
+  /*margin-left:30px;
+  margin-right:30px;*/
+  /*padding-left:30px;
+  padding-right:30px;*/
 }
 
-h3  {
-  /*font-family: Josefin Slab;
-  font-family: Abril Fatface;
-  font-family: Lobster;*/
-  font-family: Georgia;
-  /*font-style: oblique;*/
-  font-weight: 400;
+footer {
+  float: right;
+  font-family: Copperplate;
+
 }
