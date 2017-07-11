@@ -1,6 +1,6 @@
 /*--- Entry Controller ----*/
 
-myApp.controller('EntryController', function(EntryService, $scope){
+myApp.controller('EntryController', function(EntryService, filepickerService, $scope){
   console.log('in EntryController');
   var vm = this;
 
@@ -62,6 +62,8 @@ myApp.controller('EntryController', function(EntryService, $scope){
     var entryObject = {
       date: vm.dateInput,
       city: vm.cityInput,
+      state: vm.state,
+      country: vm.country,
       place: vm.placeInput,
       entry: vm.entryInput,
       latitude: vm.latitude,
@@ -72,18 +74,21 @@ myApp.controller('EntryController', function(EntryService, $scope){
       console.log('from entry controller', EntryService.response);
       vm.dateInput = '';
       vm.cityInput = '';
+      vm.stateInput = '';
+      vm.countryInput = '';
       vm.placeInput = '';
       vm.entryInput = '';
     }); // end EntryService.journalEntry
   }; // end journalEntry function
 
   // filestack function
-  vm.uploadImg = filestack.init('AhrWf6DTJTyalw1FBG6WQz');
-  vm.showPicker = function() {
+  // vm.uploadImg = filestack.init('AhrWf6DTJTyalw1FBG6WQz');
+  vm.showPicker = function(response) {
     console.log('in filestack function');
-    vm.uploadImg.pick({
-    }).then(function(response){
-      console.log('upload ->', (response.filesUploaded[0].url));
+    filepickerService.pick({
+    },
+    function(Blob){
+      console.log(JSON.stringify(Blob));
       vm.img = response.filesUploaded[0].url;
       console.log('vm.img ->', vm.img);
       // $scope.$apply();

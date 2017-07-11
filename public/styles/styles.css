@@ -3,16 +3,36 @@
   text-shadow: 2px 2px CornflowerBlue;
   letter-spacing: 2px;
   background-size: 50% 100%;
+  margin-left: 20px;
+}
+
+.loginDiv {
+  margin-left: 20px;
 }
 
 .loginRegister {
   font-family: Josefin Slab;
 }
 
+.loginBackgroundDiv {
+  margin-top: 50px;
+  min-height: 753px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url("../styles/road.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #entryJumbotron {
   text-align: center;
   text-shadow: 2px 2px Chocolate;
   font-family: Josefin Slab;
+  letter-spacing: 2px;
   background-color: Lavender !important;*/
   border-style: groove;
   /*background-img: url("camera_journal.jpg")*/
@@ -21,7 +41,7 @@
 #entryBody {
   /*background-image: url("lake.jpg");*/
   /*padding-top: 50px;*/
-  height: 900px;
+  height: 500px;
   /*background-image: url("http://wallpapercave.com/wp/r4AwAvf.jpg")*/
 }
 
@@ -29,6 +49,7 @@
   text-align: center;
   text-shadow: 2px 2px Peru;
   font-family: Josefin Slab;
+  letter-spacing: 2px;
   border-style: groove;
   background-color: Purple !important;*/
 }
@@ -37,6 +58,7 @@
   text-align: center;
   text-shadow: 2px 2px Teal;
   font-family: Josefin Slab;
+  letter-spacing: 2px;
   border-style: groove;
   background-color: Yellow !important;*/
 }
@@ -66,5 +88,5 @@
 footer {
   float: right;
   font-family: Copperplate;
-
+  margin-right: 20px;
 }

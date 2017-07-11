@@ -1,10 +1,10 @@
 <header class="header" id="loginHeader"><h1>Travelogue</h1></header>
 
+<div class="loginBackgroundDiv">
 <div ng-controller="LoginController as lc" ng-show="lc.loggedIn">
 
 <div class="loginDiv">
     <div ng-show="lc.showRegisterDiv" class="register">
-      <img src="styles/road.jpg" alt="">
       <h2 class="loginRegister">Login</h2>
       <input type="text" placeholder="username" ng-model="lc.nameInput">
       <input type="password" placeholder="password" ng-model="lc.passwordInput">
@@ -13,7 +13,6 @@
     </div>
 
     <div ng-hide="lc.showRegisterDiv" class="register">
-      <img src="styles/road.jpg" alt="">
       <h2 class="loginRegister">Register</h2>
       <input type="text" placeholder="username" ng-model="lc.registerNameInput">
       <input type="password" placeholder="password" ng-model="lc.registerPasswordInput">
@@ -24,6 +23,8 @@
     <div ng-show="lc.hasAccess">
       <button class="btn btn-default" ng-click="lc.logOut()">Log Out</button>
     </div>
+</div>
+</div>
 </div>
 
 <h3><footer>Not all those who wander are lost</footer></h3>

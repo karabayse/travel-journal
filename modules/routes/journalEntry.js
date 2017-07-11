@@ -3,6 +3,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var userModel = require('../userModel');
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 mongoose.connect('localhost:27017/journal');
 var journalSchema = new mongoose.Schema({
@@ -12,7 +13,7 @@ var journalSchema = new mongoose.Schema({
   entry: String,
   latitude: Number,
   longitude: Number,
-  photo: String
+  photo: Schema.Types.Mixed
 }); // end journalSchema
 var journalModel = mongoose.model('journalModel', journalSchema);
 
@@ -27,7 +28,7 @@ router.post('/', function(req, res) {
   console.log('journalEntry url hit', req.body);
   var newEntry = req.body;
   journalModel( newEntry ).save().then(function(){
-      res.sendStatus(201);
+    res.sendStatus(201);
   }).catch(function(err){
     console.log('error', err);
   });

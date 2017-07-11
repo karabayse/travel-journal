@@ -11,11 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
+    "angular-filepicker": "^1.1.4",
     "angular-route": "^1.6.4",
     "angular-ui-bootstrap-datetimepicker": "^2.5.0",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "filepicker": "^0.2.0",
     "google-geolocation": "^1.0.1",
     "mongoose": "^4.11.1"
   }

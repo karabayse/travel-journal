@@ -1,8 +1,8 @@
 /*---- Journal Controller ----*/
 
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'angular-filepicker']);
 
-myApp.config(function($routeProvider, $locationProvider) {
+myApp.config(function($routeProvider, $locationProvider, filepickerProvider) {
   $routeProvider.when('/', {
     templateUrl: 'views/login.html',
     controller: 'LoginController',
@@ -21,4 +21,5 @@ myApp.config(function($routeProvider, $locationProvider) {
     controllerAs: 'GeolocationsController as gc'
   }).otherwise('/');
   $locationProvider.html5Mode(true);
+  filepickerProvider.setKey('AhrWf6DTJTyalw1FBG6WQz');
 }); // end config
