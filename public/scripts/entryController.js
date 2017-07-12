@@ -62,16 +62,15 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
     var entryObject = {
       date: vm.dateInput,
       city: vm.cityInput,
-      state: vm.state,
-      country: vm.country,
+      state: vm.stateInput,
+      country: vm.countryInput,
       place: vm.placeInput,
       entry: vm.entryInput,
       latitude: vm.latitude,
-      longitude: vm.longitude,
-      imgUrl: vm.img
+      longitude: vm.longitude
     }; // end entryObject
+    console.log(entryObject);
     EntryService.journalEntry(entryObject).then(function() {
-      console.log('from entry controller', EntryService.response);
       vm.dateInput = '';
       vm.cityInput = '';
       vm.stateInput = '';
@@ -83,14 +82,14 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
 
   // filestack function
   // vm.uploadImg = filestack.init('AhrWf6DTJTyalw1FBG6WQz');
-  vm.showPicker = function(response) {
+  vm.showPicker = function() {
     console.log('in filestack function');
     filepickerService.pick({
     },
     function(Blob){
       console.log(JSON.stringify(Blob));
-      vm.img = response.filesUploaded[0].url;
-      console.log('vm.img ->', vm.img);
+      vm.entryObject.picture = Blob;
+      console.log(vm.entryObject.picture);
       // $scope.$apply();
     });
   }; // end filestack function
@@ -99,7 +98,7 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
     console.log('in showEntries');
     EntryService.getEntry().then(function() {
       vm.entries = EntryService.data;
-      console.log('back in ArchiveController with:', vm.entries);
+      console.log('back in EntryController with:', vm.entries);
     });
   }; // end showEntries
 

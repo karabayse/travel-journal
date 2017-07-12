@@ -9,6 +9,8 @@ mongoose.connect('localhost:27017/journal');
 var journalSchema = new mongoose.Schema({
   date: Date,
   city: String,
+  state: String,
+  country: String,
   place: String,
   entry: String,
   latitude: Number,

@@ -6,15 +6,15 @@
 <div class="container">
 <div ng-controller="EntryController as ec">
 
-  <nav class="navbar">
+  <nav class="navbar" id="archiveNavbar">
     <strong><a href="/geolocations">Locations</a></strong>
     <strong><a href="/entry">New Entry</a></strong>
   </nav>
 
 
 
-  <div class="journalEntries" data-ng-init="ec.showEntries()">
-    <h3>Journal Entries</h3>
+  <div class="card" id="journalEntries" data-ng-init="ec.showEntries()">
+    <strong><h2 id="journalEntriesHeader">Journal Entries</h2></strong>
     <br>
     <div class="col-sm-4" ng-repeat="data in ec.entries">
       {{ data.date }}
@@ -29,7 +29,7 @@
       <br>
       {{ data.longitude }}
       <br>
-      <img ng-src="{{ data.imgUrl }}">
+      <img ng-src="{{ data.picture.url }}">
       <br>
       <button type="button" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
     </div>

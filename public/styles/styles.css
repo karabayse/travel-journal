@@ -1,3 +1,5 @@
+/**** LOGIN ****/
+
 #loginHeader {
   font-family: Copperplate;
   text-shadow: 2px 2px CornflowerBlue;
@@ -15,7 +17,7 @@
 }
 
 .loginBackgroundDiv {
-  margin-top: 50px;
+  margin-top: 30px;
   min-height: 753px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
@@ -28,65 +30,108 @@
   background-size: cover;
 }
 
-#entryJumbotron {
-  text-align: center;
-  text-shadow: 2px 2px Chocolate;
-  font-family: Josefin Slab;
-  letter-spacing: 2px;
-  background-color: Lavender !important;*/
-  border-style: groove;
-  /*background-img: url("camera_journal.jpg")*/
-}
-
-#entryBody {
-  /*background-image: url("lake.jpg");*/
-  /*padding-top: 50px;*/
-  height: 500px;
-  /*background-image: url("http://wallpapercave.com/wp/r4AwAvf.jpg")*/
-}
-
-#archiveJumbotron {
-  text-align: center;
-  text-shadow: 2px 2px Peru;
-  font-family: Josefin Slab;
-  letter-spacing: 2px;
-  border-style: groove;
-  background-color: Purple !important;*/
-}
-
-#geolocationsJumbotron {
-  text-align: center;
-  text-shadow: 2px 2px Teal;
-  font-family: Josefin Slab;
-  letter-spacing: 2px;
-  border-style: groove;
-  background-color: Yellow !important;*/
-}
-
-#mapholder {
-  align-content: center;
-}
-
-.journalEntries {
-  font-family: Georgia;
-}
-
-/*.navbar {
-  margin-left:50px;
-  margin-right:50px;
-}*/
-
-.navbar a {
-  align-content: center;
-  color: Purple;
-  /*margin-left:30px;
-  margin-right:30px;*/
-  /*padding-left:30px;
-  padding-right:30px;*/
-}
-
 footer {
   float: right;
   font-family: Copperplate;
   margin-right: 20px;
+}
+
+
+/**** ENTRY ****/
+
+#entryJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px Peru;
+  font-family: Josefin Slab;
+  letter-spacing: 3px;
+  background-color: Purple !important;*/
+  border-style: groove;
+  /*background-img: url("camera_journal.jpg")*/
+}
+
+#entryNavbar {
+  text-align: center;
+}
+
+.navbar {
+  margin-left:50px;
+  margin-right:50px;
+}
+
+.navbar a {
+  text-align: center;
+  color: Purple;
+  margin-left:30px;
+  margin-right:30px;*/
+  padding-left:30px;
+  padding-right:30px;
+}
+
+#journalEntriesHeader {
+  font-family: cursive;
+}
+
+#journalEntries {
+  font-family: Georgia;
+}
+
+.col-sm-4 {
+  border-style: double;
+}
+
+
+/**** ARCHIVE ****/
+
+#archiveJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px Teal;
+  font-family: Josefin Slab;
+  letter-spacing: 3px;
+  border-style: groove;
+  background-color: DarkGoldenRod !important;*/
+}
+
+#archiveNavbar {
+  text-align: center;
+}
+
+
+/**** LOCATIONS ****/
+
+#geolocationsJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px Chocolate;
+  font-family: Josefin Slab;
+  letter-spacing: 3px;
+  border-style: groove;
+  background-color: Lavender !important;*/
+}
+
+.geolocationsBackgroundDiv {
+  margin-top: 0px;
+  min-height: 753px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url("../styles/sunlight.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#geolocationsNavbar {
+  text-align: center;
+}
+
+#geolocationsTitle {
+  text-align: center;
+  font-family: Josefin Slab;
+  color: Bisque;
+  background-color: Black;
+}
+
+#mapholder {
+  align-content: center;
 }

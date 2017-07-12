@@ -1,5 +1,5 @@
-TRAVEL JOURNAL Solo Project
-===========================
+TRAVELOGUE Solo Project
+=======================
 
 By: Kara Bayse
 --------------
