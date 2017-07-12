@@ -17,23 +17,23 @@
     <strong><h2 id="journalEntriesHeader">Journal Entries</h2></strong>
     <br>
     <div class="col-sm-4" ng-repeat="data in ec.entries">
-      {{ data.date }}
+      Date: {{ data.date | date: "MMMM dd, yyyy" }}
       <br>
-      {{ data.city }}
+      City: {{ data.city }}
       <br>
-      {{ data.state }}
+      State: {{ data.state }}
       <br>
-      {{ data.country }}
+      Country: {{ data.country }}
       <br>
-      {{ data.place }}
+      Place: {{ data.place }}
       <br>
       {{ data.entry }}
       <br>
-      {{ data.latitude }}
+      Latitude: {{ data.latitude }}
       <br>
-      {{ data.longitude }}
+      Longitude: {{ data.longitude }}
       <br>
-      {{ data.picture }}
+      <!-- {{ data.picture }} -->
       <img ng-src="{{ data.picture }}">
       <br>
       <button type="button" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
