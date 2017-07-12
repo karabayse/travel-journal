@@ -3,6 +3,8 @@
 myApp.controller('EntryController', function(EntryService, filepickerService, $scope){
   console.log('in EntryController');
   var vm = this;
+  vm.lat = '';
+  vm.lon = '';
 
   // geolocation
   var x = document.getElementById("demo");
@@ -66,8 +68,8 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
       country: vm.countryInput,
       place: vm.placeInput,
       entry: vm.entryInput,
-      latitude: vm.latitude,
-      longitude: vm.longitude
+      latitude: vm.lat,
+      longitude: vm.lon
     }; // end entryObject
     console.log(entryObject);
     EntryService.journalEntry(entryObject).then(function() {
