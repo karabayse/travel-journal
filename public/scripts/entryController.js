@@ -5,6 +5,7 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
   var vm = this;
   vm.lat = '';
   vm.lon = '';
+  vm.picture = '';
 
   // geolocation
   var x = document.getElementById("demo");
@@ -69,7 +70,8 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
       place: vm.placeInput,
       entry: vm.entryInput,
       latitude: vm.lat,
-      longitude: vm.lon
+      longitude: vm.lon,
+      picture: vm.picture
     }; // end entryObject
     console.log(entryObject);
     EntryService.journalEntry(entryObject).then(function() {
@@ -90,8 +92,10 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
     },
     function(Blob){
       console.log(JSON.stringify(Blob));
-      vm.entryObject.picture = Blob;
-      console.log(vm.entryObject.picture);
+      // vm.entryObject.picture = Blob;
+      vm.picture = Blob;
+      console.log(vm.picture);
+      vm.picture = vm.picture.url;
       // $scope.$apply();
     });
   }; // end filestack function

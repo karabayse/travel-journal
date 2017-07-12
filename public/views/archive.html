@@ -21,6 +21,10 @@
       <br>
       {{ data.city }}
       <br>
+      {{ data.state }}
+      <br>
+      {{ data.country }}
+      <br>
       {{ data.place }}
       <br>
       {{ data.entry }}
@@ -29,7 +33,8 @@
       <br>
       {{ data.longitude }}
       <br>
-      <img ng-src="{{ data.picture.url }}">
+      {{ data.picture }}
+      <img ng-src="{{ data.picture }}">
       <br>
       <button type="button" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
     </div>

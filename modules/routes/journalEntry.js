@@ -15,7 +15,7 @@ var journalSchema = new mongoose.Schema({
   entry: String,
   latitude: Number,
   longitude: Number,
-  photo: Schema.Types.Mixed
+  picture: String
 }); // end journalSchema
 var journalModel = mongoose.model('journalModel', journalSchema);
 

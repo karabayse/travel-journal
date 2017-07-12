@@ -27,6 +27,8 @@
   <br>
   <label><input type="text" placeholder="place" id="place" ng-model="ec.placeInput"></label>
   <br>
+  <img ng-src="ec.picture" alt="">
+  <br>
   <label><textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea><label>
   <br>
   <br>
@@ -40,6 +42,8 @@
   <br>
 
 
+  <!-- <input type="filepicker" data-fp-apikey="AhrWf6DTJTyalw1FBG6WQz"
+  onchange="console.log(event.fpfile)"> -->
   <span><button type="button" ng-click="ec.showPicker()">Upload Photo</button></span>
   <div ng-repeat="photo in ec.img">
   <img ng-src="{{ photo.imgUrl }}" class="images">
