@@ -96,7 +96,7 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
       vm.picture = Blob;
       console.log(vm.picture);
       vm.picture = vm.picture.url;
-      // $scope.$apply();
+      $scope.$apply();
     });
   }; // end filestack function
 

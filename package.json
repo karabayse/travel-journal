@@ -19,6 +19,7 @@
     "express": "^4.15.3",
     "filepicker": "^0.2.0",
     "google-geolocation": "^1.0.1",
-    "mongoose": "^4.11.1"
+    "mongoose": "^4.11.1",
+    "sweetalert": "^1.1.3"
   }
 }

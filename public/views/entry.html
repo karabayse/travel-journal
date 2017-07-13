@@ -17,41 +17,41 @@
   <div class="container" class="form-group" id="entryBody">
 
   <form>
-  <label><input type="date" id="entryDate" value="2017-07-17" ng-model="ec.dateInput"></label>
+  <input type="date" class="form-control" id="date" value="2017-07-17" ng-model="ec.dateInput">
   <br>
-  <label><input type="text" placeholder="city" id="city" ng-model="ec.cityInput"></label>
+  <input type="text" class="form-control" placeholder="city" id="city" ng-model="ec.cityInput">
   <br>
-  <label><input type="text" placeholder="state" id="state" ng-model="ec.stateInput"></label>
+  <input type="text" class="form-control" placeholder="state" id="state" ng-model="ec.stateInput">
   <br>
-  <label><input type="text" placeholder="country" id="country" ng-model="ec.countryInput"></label>
+  <input type="text" class="form-control" placeholder="country" id="country" ng-model="ec.countryInput">
   <br>
-  <label><input type="text" placeholder="place" id="place" ng-model="ec.placeInput"></label>
+  <input type="text" class="form-control" placeholder="place" id="place" ng-model="ec.placeInput">
   <br>
   <!-- <img ng-src="ec.picture" id="picture"> -->
   <br>
-  <label><textarea rows="8" cols="80" id="textarea" ng-model="ec.entryInput"></textarea><label>
+  <textarea rows="8" cols="80" class="form-control" placeholder="journal entry" id="textarea" ng-model="ec.entryInput"></textarea>
   <br>
   <br>
 
 
 
-  <span><button ng-click="ec.getLocation()">Get Position</button><span>
+  <button ng-click="ec.getLocation()">Get Position</button>
   <br>
   <br>
-  <span><div id="mapholder" ng-map="ec.showPosition()"></div><span>
+  <div id="mapholder" ng-map="ec.showPosition()"></div>
   <br>
 
 
   <!-- <input type="filepicker" data-fp-apikey="AhrWf6DTJTyalw1FBG6WQz"
   onchange="console.log(event.fpfile)"> -->
-  <span><button type="button" ng-click="ec.showPicker()">Upload Photo</button></span>
+  <button ng-click="ec.showPicker()">Upload Photo</button>
   <div ng-repeat="photo in ec.img">
   <img ng-src="{{ photo.imgUrl }}" class="images">
   </div>
   <br>
   <br>
 
-  <span><button type="button" id="submit" ng-click="ec.journalEntry()">Save</button><span>
+  <button id="submit" ng-click="ec.journalEntry()">Save</button>
   <br>
   </form>
 
