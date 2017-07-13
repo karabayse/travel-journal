@@ -10,7 +10,7 @@ myApp.service('EntryService', function($http) {
       url: '/location',
       data: location
     }).then(function(response){
-      console.log('back from postLocation:', response);
+      console.log('back from postLocation post:', response);
     });
   }; // end postLocation
 
@@ -20,7 +20,7 @@ myApp.service('EntryService', function($http) {
       method: 'GET',
       url: '/location'
     }).then(function(response){
-      console.log('back from getLocation get:', response);
+      console.log('back from getLocation get call:', response);
       sv.data = response.data;
     });
   }; // end getLocation

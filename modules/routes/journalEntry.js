@@ -34,7 +34,6 @@ router.post('/', function(req, res) {
   }).catch(function(err){
     console.log('error', err);
   });
-
 }); // end router.post for journalEntry
 
 router.delete('/:id', function(req, res) {

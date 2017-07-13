@@ -19,6 +19,10 @@ myApp.config(function($routeProvider, $locationProvider, filepickerProvider) {
     templateUrl: 'views/geolocations.html',
     controller: 'GeolocationsController',
     controllerAs: 'GeolocationsController as gc'
+  }).when('/wishlist', {
+    templateUrl: 'views/wishlist.html',
+    controller: 'WishlistController',
+    controllerAs: 'WishlistController as wc'
   }).otherwise('/');
   $locationProvider.html5Mode(true);
   filepickerProvider.setKey('AhrWf6DTJTyalw1FBG6WQz');

@@ -46,6 +46,7 @@ footer {
   letter-spacing: 3px;
   background-color: Purple !important;*/
   border-style: groove;
+  /*background: url("../styles/camera_journal.jpg") no-repeat center center fixed;*/
 }
 
 #entryNavbar {
@@ -108,6 +109,9 @@ footer {
   text-align: center;
 }
 
+#archiveBody {
+  background-color: Ivory;
+}
 
 /**** LOCATIONS ****/
 
@@ -140,4 +144,16 @@ footer {
 
 #mapholder {
   align-content: center;
+}
+
+
+/***** WISHLIST *****/
+
+#wishlistJumbotron {
+  text-align: center;
+  text-shadow: 2px 2px DarkKhaki;
+  font-family: Josefin Slab;
+  letter-spacing: 3px;
+  border-style: groove;
+  background-color: DarkSlateGrey !important;*/
 }

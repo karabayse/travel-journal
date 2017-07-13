@@ -1,0 +1,47 @@
+<div class="jumbotron" id="wishlistJumbotron">
+  <h1>Future Travels Wishlist</h1>
+</div>
+
+
+<div class="container" id="wishlistBody">
+<div ng-controller="WishlistController as wc">
+
+  <nav class="navbar" id="archiveNavbar">
+    <strong><a href="/archive">Journal Entries</a></strong>
+    <strong><a href="/entry">New Journal Entry</a></strong>
+    <strong><a href="/geolocations">Locations</a></strong>
+  </nav>
+
+
+
+  <div class="container" class="form-group" id="wishlistBody">
+
+  <form>
+  <input type="text" class="form-control" placeholder="city" id="city" ng-model="wc.cityInput">
+  <br>
+  <input type="text" class="form-control" placeholder="state" id="state" ng-model="wc.stateInput">
+  <br>
+  <input type="text" class="form-control" placeholder="country" id="country" ng-model="wc.countryInput">
+  <br>
+  <input type="text" class="form-control" placeholder="place" id="place" ng-model="wc.placeInput">
+  <br>
+  <!-- <img ng-src="ec.picture" id="picture"> -->
+  <br>
+  <textarea rows="8" cols="80" class="form-control" placeholder="wishlist info" id="textarea" ng-model="wc.wishInput"></textarea>
+  <br>
+  <br>
+
+
+  <button class="btn btn-block btn-md" ng-click="wc.showPicker()">Upload Photo</button>
+  <div ng-repeat="photo in wc.img">
+  <img ng-src="{{ photo.imgUrl }}" class="images">
+  </div>
+  <br>
+  <br>
+
+  <button class="btn btn-block btn-md" id="submit" ng-click="wc.wishlistEntry()">Save Wishlist Entry</button>
+  <br>
+  </form>
+
+
+  </div>
