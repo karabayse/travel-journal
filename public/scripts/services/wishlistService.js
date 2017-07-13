@@ -15,7 +15,7 @@ myApp.service('WishlistService', function($http) {
   }; // end wishlistEntry
 
   // GET call for getLocation
-  sv.getWish = function() {
+  sv.getWishlistEntry = function() {
     return $http({
       method: 'GET',
       url: '/wishlist'

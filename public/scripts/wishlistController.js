@@ -24,5 +24,12 @@ myApp.controller('WishlistController', function(WishlistService, filepickerServi
     }); // end WishlistService.wishlistEntry
   }; // end wishlistEntry function
 
+  vm.showWishlist = function() {
+    console.log('in showWishlist');
+    WishlistService.getWishlistEntry().then(function() {
+      vm.wishlist = WishlistService.data;
+      console.log('back in EntryController with:', vm.wishlist);
+    });
+  }; // end showEntries
 
 }); // end controller

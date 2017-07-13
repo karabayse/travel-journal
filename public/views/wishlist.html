@@ -44,4 +44,27 @@
   </form>
 
 
+  <div class="card" id="wishlistEntries" data-ng-init="wc.showWishlist()">
+    <strong><h2 id="wishlistHeader">Wishlist Entries</h2></strong>
+    <br>
+    <div class="col-sm-4" ng-repeat="data in wc.wishlist">
+      City: {{ data.city }}
+      <br>
+      State: {{ data.state }}
+      <br>
+      Country: {{ data.country }}
+      <br>
+      Place: {{ data.place }}
+      <br>
+      {{ data.entry }}
+      <br>
+      <!-- {{ data.picture }} -->
+      <img ng-src="{{ data.picture }}">
+      <br>
+      <button type="button" id="deleteButton" ng-click="wc.delete($index)">Delete Entry</button>
+    </div>
+  </div>
+  </div>
+
+
   </div>
