@@ -66,6 +66,20 @@ footer {
   padding-right:30px;
 }
 
+.entryBackgroundDiv {
+  margin-top: 30px;
+  min-height: 753px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url("../styles/paper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #journalEntriesHeader {
   font-family: cursive;
 }

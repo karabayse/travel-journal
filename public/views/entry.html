@@ -1,7 +1,7 @@
 <header class="jumbotron" id=entryJumbotron><h1>Journal Entry</h1></header>
 
 
-<div ng-controller="EntryController as ec">
+<div ng-controller="EntryController as ec" class="entryBackgroundDiv">
 
 
 <div class="container">
@@ -29,29 +29,26 @@
   <br>
   <!-- <img ng-src="ec.picture" id="picture"> -->
   <br>
-  <textarea rows="8" cols="80" class="form-control" placeholder="journal entry" id="textarea" ng-model="ec.entryInput"></textarea>
+  <textarea rows="8" cols="80" class="form-control" placeholder="journal text" id="textarea" ng-model="ec.entryInput"></textarea>
   <br>
   <br>
 
 
-
-  <button ng-click="ec.getLocation()">Get Position</button>
+  <button class="btn btn-block btn-md" ng-click="ec.getLocation()">Map Location</button>
   <br>
   <br>
   <div id="mapholder" ng-map="ec.showPosition()"></div>
   <br>
 
 
-  <!-- <input type="filepicker" data-fp-apikey="AhrWf6DTJTyalw1FBG6WQz"
-  onchange="console.log(event.fpfile)"> -->
-  <button ng-click="ec.showPicker()">Upload Photo</button>
+  <button class="btn btn-block btn-md" ng-click="ec.showPicker()">Upload Photo</button>
   <div ng-repeat="photo in ec.img">
   <img ng-src="{{ photo.imgUrl }}" class="images">
   </div>
   <br>
   <br>
 
-  <button id="submit" ng-click="ec.journalEntry()">Save</button>
+  <button class="btn btn-block btn-md" id="submit" ng-click="ec.journalEntry()">Save Journal Entry</button>
   <br>
   </form>
 
