@@ -93,6 +93,10 @@ footer {
   border-style: double;
 }
 
+#mapholder {
+  margin-left: 320px;
+  margin-right: 320px;
+}
 
 /**** ARCHIVE ****/
 
