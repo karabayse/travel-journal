@@ -41,10 +41,11 @@ footer {
 
 #entryJumbotron {
   text-align: center;
-  text-shadow: 2px 2px Peru;
+  text-shadow: 2px 2px White;
   font-family: Josefin Slab;
   letter-spacing: 3px;
-  background-color: Purple !important;*/
+  border-style: groove;
+  background-color: Black !important;*/
   border-style: groove;
   /*background: url("../styles/camera_journal.jpg") no-repeat center center fixed;*/
 }
@@ -60,7 +61,7 @@ footer {
 
 .navbar a {
   text-align: center;
-  color: Purple;
+  color: CornflowerBlue;
   margin-left:30px;
   margin-right:30px;*/
   padding-left:30px;
@@ -68,13 +69,13 @@ footer {
 }
 
 .entryBackgroundDiv {
-  margin-top: 30px;
+  margin-top: -2.5em;
   min-height: 753px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
-    ),
-    url("../styles/paper.jpg") no-repeat center center fixed;
+    );
+  background-color: AliceBlue;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -96,6 +97,10 @@ footer {
 #mapholder {
   margin-left: 320px;
   margin-right: 320px;
+}
+
+#entryFooter {
+  background-color: Black;
 }
 
 /**** ARCHIVE ****/
@@ -124,13 +129,13 @@ footer {
   text-shadow: 2px 2px Bisque;
   font-family: Josefin Slab;
   letter-spacing: 3px;
-  border-style: groove;
+  /*border-style: groove;*/
   background-color: Black !important;*/
 }
 
 .geolocationsBackgroundDiv {
-  margin-top: 0px;
-  min-height: 753px;
+  margin-top: -2.5em;
+  min-height: 800px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
