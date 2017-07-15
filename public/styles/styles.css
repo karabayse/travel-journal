@@ -8,6 +8,7 @@
 }
 
 .loginDiv {
+  font-family: Helvetica;
   padding-top: 20px;
   margin-left: 100px;
 }
@@ -198,7 +199,7 @@ footer {
 
 #wishlistBackgroundDiv {
   margin-top: -2.5em;
-  min-height: 800px;
+  min-height: 1000px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)

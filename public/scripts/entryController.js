@@ -117,8 +117,21 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
   vm.delete = function(index) {
     console.log('in delete function');
       EntryService.delete(vm.entries[index]._id).then(function() {
+        sweetAlert("Entry Deleted");
         vm.showEntries();
       });
   }; // end delete function
+
+
+  // sweetAlert({
+  //   title: "Are you sure?",
+  //   text: "Are you sure you want to delete this entry?",
+  //   type: "warning",
+  //   showCancelButton: true,
+  //   confirmButtonColor: "#DD6B55",
+  //   confirmButtonText: "Yes, delete it.",
+  //   closeOnConfirm: false
+  //  },
+
 
 }); // end controller

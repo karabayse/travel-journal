@@ -15,7 +15,6 @@
 
 
   <div class="card" id="journalEntries" data-ng-init="ec.showEntries()">
-    <!-- <strong><h2 id="journalEntriesHeader">Journal Entries</h2></strong> -->
     <br>
     <div class="col-sm-3" ng-repeat="data in ec.entries">
       {{ data.date | date: "MMMM dd, yyyy" }}
@@ -37,7 +36,8 @@
       <!-- {{ data.picture }} -->
       <img ng-src="{{ data.picture }}">
       <br>
-      <button type="button" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
+      <br>
+      <button class="btn btn-default btn-xs" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
     </div>
   </div>
   </div>

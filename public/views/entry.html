@@ -15,22 +15,6 @@
 </div>
 
 
-<!-- <div id="sidebar-wrapper" style="width:25%">
-  <ul class="sidebar-nav">
-  <a href="/archive" class="sidebar">Journal Entries</a>
-    <br>
-    <br>
-  <a href="/geolocations" class="sidebar">Locations</a>
-    <br>
-    <br>
-  <a href="/wishlist" class="sidebar">Future Travels Wishlist</a>
-  </ul>
-</div> -->
-
-
-
-
-
   <div class="container" class="form-group" id="entryBody">
 
   <form>
@@ -44,7 +28,6 @@
   <br>
   <input type="text" class="form-control" placeholder="place" id="place" ng-model="ec.placeInput">
   <br>
-  <!-- <img ng-src="ec.picture" id="picture"> -->
   <br>
   <textarea rows="8" cols="80" class="form-control" placeholder="journal text" id="textarea" ng-model="ec.entryInput"></textarea>
   <br>
@@ -52,7 +35,6 @@
 
 
   <button class="btn btn-block btn-md" ng-click="ec.getLocation()">Map Location</button>
-  <br>
   <br>
   <div id="mapholder" ng-map="ec.showPosition()"></div>
   <br>
