@@ -17,7 +17,7 @@
   <div class="card" id="journalEntries" data-ng-init="ec.showEntries()">
     <!-- <strong><h2 id="journalEntriesHeader">Journal Entries</h2></strong> -->
     <br>
-    <div class="col-sm-4" ng-repeat="data in ec.entries">
+    <div class="col-sm-3" ng-repeat="data in ec.entries">
       {{ data.date | date: "MMMM dd, yyyy" }}
       <br>
       {{ data.city }}
@@ -43,7 +43,7 @@
   </div>
 
 <div id="archiveFooter">
-<footer></footer>
+<!-- <footer></footer> -->
 </div>
 
 </div>
