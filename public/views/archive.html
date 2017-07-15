@@ -3,8 +3,8 @@
 </div>
 
 
+<div ng-controller="EntryController as ec" id="archiveBackgroundDiv">
 <div class="container" id="archiveBody">
-<div ng-controller="EntryController as ec">
 
   <nav class="navbar" id="archiveNavbar">
     <strong><a href="/entry">New Journal Entry</a></strong>
@@ -15,24 +15,24 @@
 
 
   <div class="card" id="journalEntries" data-ng-init="ec.showEntries()">
-    <strong><h2 id="journalEntriesHeader">Journal Entries</h2></strong>
+    <!-- <strong><h2 id="journalEntriesHeader">Journal Entries</h2></strong> -->
     <br>
     <div class="col-sm-4" ng-repeat="data in ec.entries">
-      Date: {{ data.date | date: "MMMM dd, yyyy" }}
+      {{ data.date | date: "MMMM dd, yyyy" }}
       <br>
-      City: {{ data.city }}
+      {{ data.city }}
       <br>
-      State: {{ data.state }}
+      {{ data.state }}
       <br>
-      Country: {{ data.country }}
+      {{ data.country }}
       <br>
-      Place: {{ data.place }}
+      {{ data.place }}
       <br>
       {{ data.entry }}
       <br>
-      Latitude: {{ data.latitude }}
+      {{ data.latitude }}
       <br>
-      Longitude: {{ data.longitude }}
+      {{ data.longitude }}
       <br>
       <!-- {{ data.picture }} -->
       <img ng-src="{{ data.picture }}">

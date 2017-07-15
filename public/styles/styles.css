@@ -1,19 +1,32 @@
 /**** LOGIN ****/
 
 #loginHeader {
-  font-family: Copperplate;
-  text-shadow: 2px 2px CornflowerBlue;
+  font-family: Helvetica;
   letter-spacing: 2px;
   background-size: 50% 100%;
-  margin-left: 20px;
+  margin-left: 100px;
 }
 
 .loginDiv {
-  margin-left: 20px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
 
 .loginRegister {
-  font-family: Josefin Slab;
+  font-family: Helvetica;
+  color: White;
+}
+
+input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .loginBackgroundDiv {
@@ -32,8 +45,8 @@
 
 footer {
   float: right;
-  font-family: Copperplate;
-  margin-right: 20px;
+  font-family: Helvetica;
+  margin-right: 100px;
 }
 
 
@@ -41,13 +54,10 @@ footer {
 
 #entryJumbotron {
   text-align: center;
-  text-shadow: 2px 2px White;
-  font-family: Josefin Slab;
+  color: White;
+  font-family: Helvetica;
   letter-spacing: 3px;
-  border-style: groove;
-  background-color: Black !important;*/
-  border-style: groove;
-  /*background: url("../styles/camera_journal.jpg") no-repeat center center fixed;*/
+  background-image: url("../styles/cloth.jpg");
 }
 
 #entryNavbar {
@@ -57,11 +67,16 @@ footer {
 .navbar {
   margin-left:50px;
   margin-right:50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Helvetica;
 }
 
 .navbar a {
   text-align: center;
-  color: CornflowerBlue;
+  color: DarkBlue;
+  font-family: Helvetica;
+  letter-spacing: 2px;
   margin-left:30px;
   margin-right:30px;*/
   padding-left:30px;
@@ -70,12 +85,12 @@ footer {
 
 .entryBackgroundDiv {
   margin-top: -2.5em;
-  min-height: 753px;
+  min-height: 1000px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     );
-  background-color: AliceBlue;
+  background-color: White;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,47 +105,62 @@ footer {
   font-family: Georgia;
 }
 
-.col-sm-4 {
-  border-style: double;
-}
-
 #mapholder {
   margin-left: 320px;
   margin-right: 320px;
 }
 
-#entryFooter {
-  background-color: Black;
-}
 
 /**** ARCHIVE ****/
 
 #archiveJumbotron {
   text-align: center;
-  text-shadow: 2px 2px Teal;
-  font-family: Josefin Slab;
+  color: White;
+  font-family: Helvetica;
   letter-spacing: 3px;
-  border-style: groove;
-  background-color: DarkGoldenRod !important;*/
+  background-image: url("../styles/stripes.jpg");
 }
 
 #archiveNavbar {
   text-align: center;
 }
 
-#archiveBody {
-  background-color: Ivory;
+#archiveBackgroundDiv {
+  margin-top: -2.5em;
+  min-height: 753px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.col-sm-4 {
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: White;
+  background-color: MidnightBlue;
+  font-family: Helvetica;
 }
 
 /**** LOCATIONS ****/
 
 #geolocationsJumbotron {
   text-align: center;
-  text-shadow: 2px 2px Bisque;
-  font-family: Josefin Slab;
+  color: White;
+  font-family: Helvetica;
   letter-spacing: 3px;
-  /*border-style: groove;*/
-  background-color: Black !important;*/
+  background-image: url("../styles/fibonacci.jpg")
 }
 
 .geolocationsBackgroundDiv {
@@ -140,7 +170,7 @@ footer {
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
-    url("../styles/sunlight.jpg") no-repeat center center fixed;
+    /*url("../styles/sunlight.jpg") no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -160,9 +190,26 @@ footer {
 
 #wishlistJumbotron {
   text-align: center;
-  text-shadow: 2px 2px DarkKhaki;
-  font-family: Josefin Slab;
+  color: White;
+  font-family: Helvetica;
   letter-spacing: 3px;
-  border-style: groove;
-  background-color: DarkSlateGrey !important;*/
+  background-image: url("../styles/steps.png");
 }
+
+#wishlistBackgroundDiv {
+  margin-top: -2.5em;
+  min-height: 800px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    );
+  /*background-color: FloralWhite;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ #wishlistHeader {
+   font-family: Helvetica;
+ }

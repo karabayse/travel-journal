@@ -6,23 +6,23 @@
 
 <div class="loginDiv">
     <div ng-show="lc.showRegisterDiv" class="register">
-      <h2 class="loginRegister">Login</h2>
+      <h2 class="loginRegister">travel the world, log the experience</h2>
       <input type="text" placeholder="username" ng-model="lc.nameInput">
       <input type="password" placeholder="password" ng-model="lc.passwordInput">
-      <button class="btn btn-primary btn-xs" class="btn btn-primary btn-sm" ng-click="lc.logIn()">Log In</button>
-      <p ng-click="lc.toggleLogin()"><strong><a href="#">Register</a></strong></p>
+      <button class="btn btn-primary btn-xs" class="btn btn-primary btn-sm" ng-click="lc.logIn()">log in</button>
+      <p ng-click="lc.toggleLogin()"><strong><a href="#">register</a></strong></p>
     </div>
 
     <div ng-hide="lc.showRegisterDiv" class="register">
-      <h2 class="loginRegister">Register</h2>
+      <h2 class="loginRegister">travel the world, log the experience</h2>
       <input type="text" placeholder="username" ng-model="lc.registerNameInput">
       <input type="password" placeholder="password" ng-model="lc.registerPasswordInput">
-      <button class="btn btn-primary btn-xs" ng-click="lc.register()">Register</button>
-      <p ng-click="lc.toggleLogin()"><a href="#">Log In</a></p>
+      <button class="btn btn-primary btn-xs" ng-click="lc.register()">register</button>
+      <p ng-click="lc.toggleLogin()"><a href="#">log in</a></p>
     </div>
 
     <div ng-show="lc.hasAccess">
-      <button class="btn btn-default" ng-click="lc.logOut()">Log Out</button>
+      <button class="btn btn-default" ng-click="lc.logOut()">log out</button>
     </div>
 </div>
 

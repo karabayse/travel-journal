@@ -3,8 +3,8 @@
 </div>
 
 
-<div class="container" id="wishlistBody">
-<div ng-controller="WishlistController as wc">
+<div ng-controller="WishlistController as wc" id="wishlistBackgroundDiv">
+  <div class="container" id="wishlistBody">
 
   <nav class="navbar" id="archiveNavbar">
     <strong><a href="/archive">Journal Entries</a></strong>
@@ -48,13 +48,13 @@
     <strong><h2 id="wishlistHeader">Wishlist Entries</h2></strong>
     <br>
     <div class="col-sm-4" ng-repeat="data in wc.wishlist">
-      City: {{ data.city }}
+      {{ data.city }}
       <br>
-      State: {{ data.state }}
+      {{ data.state }}
       <br>
-      Country: {{ data.country }}
+      {{ data.country }}
       <br>
-      Place: {{ data.place }}
+      {{ data.place }}
       <br>
       {{ data.entry }}
       <br>
