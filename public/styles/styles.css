@@ -51,17 +51,16 @@ footer {
 }
 
 
-/**** ENTRY ****/
+/**** HOME ****/
 
-#entryJumbotron {
-  text-align: center;
-  color: White;
+#homeHeader {
   font-family: Helvetica;
-  letter-spacing: 3px;
-  background-image: url("../styles/cloth.jpg");
+  letter-spacing: 2px;
+  background-size: 50% 100%;
+  margin-left: 100px;
 }
 
-#entryNavbar {
+#homeNavbar {
   text-align: center;
 }
 
@@ -77,11 +76,48 @@ footer {
   text-align: center;
   color: DarkBlue;
   font-family: Helvetica;
+  font-size: 125%;
   letter-spacing: 2px;
   margin-left:30px;
   margin-right:30px;*/
   padding-left:30px;
   padding-right:30px;
+}
+
+.homeBackgroundDiv {
+  margin-top: 30px;
+  min-height: 763px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url("../styles/lake.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.homeBody {
+  color: White;
+  font-family: Helvetica;
+  margin-left: 100px;
+  padding-top: 200px;
+}
+
+
+/**** ENTRY ****/
+
+#entryJumbotron {
+  text-align: center;
+  color: White;
+  font-family: Helvetica;
+  letter-spacing: 3px;
+  background-image: url("../styles/cloth.jpg");
+}
+
+#entryNavbar {
+  text-align: center;
 }
 
 .entryBackgroundDiv {

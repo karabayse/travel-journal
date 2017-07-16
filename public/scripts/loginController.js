@@ -17,7 +17,7 @@ myApp.controller('LoginController', function(LoginService, $location){
       console.log('from login controller', LoginService.response);
       if (LoginService.response.data === 'Match!') {
         vm.hasAccess = true;
-        $location.url('/entry');
+        $location.url('/home');
         console.log('has access');
       } else {
         vm.hasAccess = false;

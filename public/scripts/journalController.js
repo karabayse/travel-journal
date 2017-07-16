@@ -7,6 +7,10 @@ myApp.config(function($routeProvider, $locationProvider, filepickerProvider) {
     templateUrl: 'views/login.html',
     controller: 'LoginController',
     controllerAs: 'LoginController as lc'
+  }).when('/home', {
+    templateUrl: 'views/home.html',
+    controller: 'HomeController',
+    controllerAs: 'HomeController as hc'
   }).when('/entry', {
     templateUrl: 'views/entry.html',
     controller: 'EntryController',
@@ -15,10 +19,6 @@ myApp.config(function($routeProvider, $locationProvider, filepickerProvider) {
     templateUrl: 'views/archive.html',
     controller: 'EntryController',
     controllerAs: 'EntryController as ec'
-  }).when('/geolocations', {
-    templateUrl: 'views/geolocations.html',
-    controller: 'GeolocationsController',
-    controllerAs: 'GeolocationsController as gc'
   }).when('/wishlist', {
     templateUrl: 'views/wishlist.html',
     controller: 'WishlistController',
