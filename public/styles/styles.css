@@ -74,7 +74,7 @@ footer {
 
 .navbar a {
   text-align: center;
-  color: DarkBlue;
+  /*color: DarkBlue;*/
   font-family: Helvetica;
   font-size: 125%;
   letter-spacing: 2px;
@@ -82,6 +82,18 @@ footer {
   margin-right:30px;*/
   padding-left:30px;
   padding-right:30px;
+}
+
+a.active-home {
+    /*background-color: #4CAF50;*/
+    color: White;
+    text-decoration: underline;
+}
+
+a.active {
+    /*background-color: #4CAF50;*/
+    color: DarkBlue;
+    text-decoration: underline;
 }
 
 .homeBackgroundDiv {
@@ -101,8 +113,8 @@ footer {
 .homeBody {
   color: White;
   font-family: Helvetica;
-  margin-left: 100px;
-  padding-top: 200px;
+  margin-left: 150px;
+  padding-top: 300px;
 }
 
 
@@ -114,6 +126,8 @@ footer {
   font-family: Helvetica;
   letter-spacing: 3px;
   background-image: url("../styles/cloth.jpg");
+  /*background-image: url("../styles/waterfall.jpg");
+  background-size: cover;*/
 }
 
 #entryNavbar {
@@ -147,6 +161,17 @@ footer {
   margin-right: 320px;
 }
 
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 
 /**** ARCHIVE ****/
 
@@ -175,7 +200,7 @@ footer {
   background-size: cover;
 }
 
-.col-sm-3 {
+.col-sm-4 {
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -188,38 +213,6 @@ footer {
   color: White;
   background-color: MidnightBlue;
   font-family: Helvetica;
-}
-
-/**** LOCATIONS ****/
-
-#geolocationsJumbotron {
-  text-align: center;
-  color: White;
-  font-family: Helvetica;
-  letter-spacing: 3px;
-  background-image: url("../styles/fibonacci.jpg")
-}
-
-.geolocationsBackgroundDiv {
-  margin-top: -2.5em;
-  min-height: 800px;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.05)
-    ),
-    /*url("../styles/sunlight.jpg") no-repeat center center fixed;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#geolocationsNavbar {
-  text-align: center;
-}
-
-#mapholder {
-  align-content: center;
 }
 
 

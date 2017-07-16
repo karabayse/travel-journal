@@ -10,7 +10,7 @@
       <input type="text" placeholder="username" ng-model="lc.nameInput">
       <input type="password" placeholder="password" ng-model="lc.passwordInput">
       <button class="btn btn-primary btn-xs" class="btn btn-primary btn-sm" ng-click="lc.logIn()">log in</button>
-      <p ng-click="lc.toggleLogin()"><strong><a href="#">register</a></strong></p>
+      <p ng-click="lc.toggleLogin()"><a href="#">register</a></p>
     </div>
 
     <div ng-hide="lc.showRegisterDiv" class="register">
@@ -18,7 +18,7 @@
       <input type="text" placeholder="username" ng-model="lc.registerNameInput">
       <input type="password" placeholder="password" ng-model="lc.registerPasswordInput">
       <button class="btn btn-primary btn-xs" ng-click="lc.register()">register</button>
-      <p ng-click="lc.toggleLogin()"><strong></strong><a href="#">log in</a></strong></p>
+      <p ng-click="lc.toggleLogin()"><a href="#">log in</a></strong></p>
     </div>
 
     <div ng-show="lc.hasAccess">
@@ -30,4 +30,6 @@
 </div>
 </div>
 
-<footer><h3>Not all those who wander are lost</h3></footer>
+<footer><h3></h3></footer>
+
+<!-- Not all those who wander are lost -->
