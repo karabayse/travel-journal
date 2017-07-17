@@ -32,7 +32,7 @@ button {
 
 .loginBackgroundDiv {
   margin-top: 30px;
-  min-height: 753px;
+  min-height: 853px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
@@ -64,6 +64,11 @@ footer {
   text-align: center;
 }
 
+.homeNavbar {
+  text-align: center;
+  color: DarkBlue;
+}
+
 .navbar {
   margin-left:50px;
   margin-right:50px;
@@ -85,20 +90,18 @@ footer {
 }
 
 a.active-home {
-    /*background-color: #4CAF50;*/
     color: White;
     text-decoration: underline;
 }
 
 a.active {
-    /*background-color: #4CAF50;*/
     color: DarkBlue;
     text-decoration: underline;
 }
 
 .homeBackgroundDiv {
   margin-top: 30px;
-  min-height: 763px;
+  min-height: 753px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
@@ -114,7 +117,7 @@ a.active {
   color: White;
   font-family: Helvetica;
   margin-left: 150px;
-  padding-top: 300px;
+  padding-top: 250px;
 }
 
 
