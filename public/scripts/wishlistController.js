@@ -16,6 +16,7 @@ myApp.controller('WishlistController', function(WishlistService, filepickerServi
     }; // end wishlistObject
     console.log(wishlistObject);
     WishlistService.wishlistEntry(wishlistObject).then(function() {
+      sweetAlert("Entry Saved!");
       vm.cityInput = '';
       vm.stateInput = '';
       vm.countryInput = '';

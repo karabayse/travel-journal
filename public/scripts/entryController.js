@@ -82,6 +82,7 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
     }; // end entryObject
     console.log(entryObject);
     EntryService.journalEntry(entryObject).then(function() {
+      sweetAlert("Entry Saved!");
       vm.dateInput = '';
       vm.cityInput = '';
       vm.stateInput = '';
@@ -117,7 +118,7 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
   vm.delete = function(index) {
     console.log('in delete function');
       EntryService.delete(vm.entries[index]._id).then(function() {
-        sweetAlert("Entry Deleted");
+        sweetAlert("Entry Deleted!");
         vm.showEntries();
       });
   }; // end delete function

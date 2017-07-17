@@ -161,11 +161,17 @@ a.active {
   margin-right: 320px;
 }
 
+.card {
+  max-height: 1000px;
+  overflow: auto;
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
+    max-height: 150px;
 }
 
 img:hover {
@@ -200,7 +206,7 @@ img:hover {
   background-size: cover;
 }
 
-.col-sm-4 {
+.col-sm-3 {
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;

@@ -40,7 +40,7 @@
   <br>
   <br>
 
-  <button class="btn btn-block btn-md" id="submit" ng-click="wc.wishlistEntry()">Save Wishlist Entry</button>
+  <button class="btn btn-block btn-md" id="submit" ng-click="wc.showWishlist()">Save Wishlist Entry</button>
   <br>
   </form>
 
@@ -48,7 +48,7 @@
   <div class="card" id="wishlistEntries" data-ng-init="wc.showWishlist()">
     <strong><h2 id="wishlistHeader">Wishlist Entries</h2></strong>
     <br>
-    <div class="col-sm-4" ng-repeat="data in wc.wishlist">
+    <div class="col-sm-3" ng-repeat="data in wc.wishlist">
       {{ data.city }}
       <br>
       {{ data.state }}
@@ -57,10 +57,10 @@
       <br>
       {{ data.place }}
       <br>
-      {{ data.entry }}
+      {{ data.wish }}
       <br>
-      <!-- {{ data.picture }} -->
-      <img ng-src="{{ data.picture }}">
+      <a href="{{ data.picture }}">
+      <img ng-src="{{ data.picture }}"></a>
       <br>
       <button class="btn btn-default btn-xs" id="deleteButton" ng-click="wc.delete($index)">Delete Entry</button>
     </div>
