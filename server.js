@@ -15,7 +15,6 @@ app.use('/wishlist', wishlist);
 
 // globals
 var port = process.env.PORT || 3505;
-mongoose.connect('mongodb://heroku_1zsfvmmt:mbdqouikp7stet48mupjah6i96@ds023490.mlab.com:23490/heroku_1zsfvmmt');
 
 // spin up server
 app.listen(port, function(){
