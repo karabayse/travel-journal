@@ -5,7 +5,6 @@ var userModel = require('../userModel');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('localhost:27017/journal');
 var wishlistSchema = new mongoose.Schema({
   date: Date,
   city: String,

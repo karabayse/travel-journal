@@ -5,7 +5,6 @@ var userModel = require('../userModel');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://heroku_1zsfvmmt:mbdqouikp7stet48mupjah6i96@ds023490.mlab.com:23490/heroku_1zsfvmmt');
 var journalSchema = new mongoose.Schema({
   date: Date,
   city: String,
