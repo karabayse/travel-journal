@@ -7,7 +7,21 @@ var register = require('./modules/routes/register');
 var wishlist = require('./modules/routes/wishlist');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://heroku_1zsfvmmt:mbdqouikp7stet48mupjah6i96@ds023490.mlab.com:23490/heroku_1zsfvmmt');
+
+var databaseURI = '';
+// process.env.MONGODB_URI will only be defined if you
+// are running on Heroku
+if(process.env.MONGODB_URI != undefined) {
+    // use the string value of the environment variable
+    databaseURI = process.env.MONGODB_URI;
+} else {
+    // use the local database server
+    databaseURI = 'mongodb://localhost:27017/journal';
+}
+
+mongoose.connect('mongodb://heroku_8339j86v:rqv595v25p7vsn05ersj7r58du@ds021694.mlab.com:21694/heroku_8339j86v');
+
+// mongoose.connect('localhost:27017/journal');
 
 // uses
 app.use(express.static('public'));
