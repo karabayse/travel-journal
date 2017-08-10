@@ -34,4 +34,4 @@ Stretch Goals
 
 Application URL
 ---------------
-Travel Journal launched on:
+Travelogue launched on: https://travelogue-solo-project.herokuapp.com
