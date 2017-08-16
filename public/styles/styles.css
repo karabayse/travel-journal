@@ -60,6 +60,11 @@ footer {
   margin-left: 100px;
 }
 
+.navbar navbar-inverse {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 #homeNavbar {
   text-align: center;
 }
@@ -67,6 +72,7 @@ footer {
 .homeNavbar {
   text-align: center;
   color: DarkBlue;
+  border: border-bottom;
 }
 
 .navbar {

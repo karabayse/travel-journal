@@ -30,7 +30,7 @@ Stretch Goals
 -------------
 - [ ] Mobile App for IOS and Android
 - [ ] Geolocation Aggregator
-- [ ] Heroku
+- [X] Heroku
 
 Application URL
 ---------------
