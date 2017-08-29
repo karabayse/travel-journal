@@ -80,7 +80,7 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
       longitude: vm.lon,
       picture: vm.picture
     }; // end entryObject
-    console.log(entryObject);
+    console.log('entryObject:', entryObject);
     EntryService.journalEntry(entryObject).then(function() {
       sweetAlert("Entry Saved!");
       vm.dateInput = '';
@@ -117,22 +117,21 @@ myApp.controller('EntryController', function(EntryService, filepickerService, $s
 
   vm.delete = function(index) {
     console.log('in delete function');
+    sweetAlert({
+      title: "Are you sure?",
+      text: "Are you sure you want to delete this entry?",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Yes, delete it.",
+      closeOnConfirm: false
+    }).then(function() {
+      console.log('delete entry confirmed');
       EntryService.delete(vm.entries[index]._id).then(function() {
         sweetAlert("Entry Deleted!");
         vm.showEntries();
-      });
-  }; // end delete function
-
-
-  // sweetAlert({
-  //   title: "Are you sure?",
-  //   text: "Are you sure you want to delete this entry?",
-  //   type: "warning",
-  //   showCancelButton: true,
-  //   confirmButtonColor: "#DD6B55",
-  //   confirmButtonText: "Yes, delete it.",
-  //   closeOnConfirm: false
-  //  },
-
+      }); // end EntryService.delete
+    }); // end .then
+  }; // end vm.delete
 
 }); // end controller

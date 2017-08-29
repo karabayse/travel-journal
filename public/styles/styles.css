@@ -37,7 +37,7 @@ button {
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
-    url("../styles/road.jpg") no-repeat center center fixed;
+    url("../styles/images/road.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -111,7 +111,7 @@ a.active {
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
-    url("../styles/lake.jpg") no-repeat center center fixed;
+    url("../styles/images/lake.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -133,7 +133,7 @@ a.active {
   color: White;
   font-family: Helvetica;
   letter-spacing: 3px;
-  background-image: url("../styles/cloth.jpg");
+  background-image: url("../styles/images/cloth.jpg");
   /*background-image: url("../styles/waterfall.jpg");
   background-size: cover;*/
 }
@@ -194,7 +194,7 @@ img:hover {
   color: White;
   font-family: Helvetica;
   letter-spacing: 3px;
-  background-image: url("../styles/stripes.jpg");
+  background-image: url("../styles/images/stripes.jpg");
 }
 
 #archiveNavbar {
@@ -229,6 +229,10 @@ img:hover {
   font-family: Helvetica;
 }
 
+.img {
+  max-width: 300px;
+  max-height: 300px;
+}
 
 /***** WISHLIST *****/
 
@@ -237,7 +241,7 @@ img:hover {
   color: White;
   font-family: Helvetica;
   letter-spacing: 3px;
-  background-image: url("../styles/steps.png");
+  background-image: url("../styles/images/steps.png");
 }
 
 #wishlistBackgroundDiv {

@@ -22,12 +22,14 @@ router.get('/', function(req, res) {
   console.log('journalObject');
   journalModel.find().then(function(entry){
     res.send(entry);
+    console.log('entry:', entry);
   });
 }); // end entry get call
 
 router.post('/', function(req, res) {
   console.log('journalEntry url hit', req.body);
   var newEntry = req.body;
+  console.log('req.body:', req.body);
   journalModel( newEntry ).save().then(function(){
     res.sendStatus(201);
   }).catch(function(err){
