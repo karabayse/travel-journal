@@ -1,18 +1,19 @@
-<div class="jumbotron" id="wishlistJumbotron">
-  <h1>Future Travels Wishlist</h1>
-</div>
+<header class="header" id="homeHeader"><strong><h1>Travelogue</h1></strong></header>
 
 
 <div ng-controller="WishlistController as wc" id="wishlistBackgroundDiv">
-  <div class="container" id="wishlistBody">
+  <div>
 
-  <nav class="navbar" id="archiveNavbar">
-    <strong><a href="/home">Home</a></strong>
-    <strong><a href="/entry">New Journal Entry</a></strong>
-    <strong><a href="/archive">Journal Entries</a></strong>
-    <strong><a href="/wishlist" class="active">Future Travels Wishlist</a></strong>
-  </nav>
-
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li><a href="/home" class="homeNavbar">Home</a></li>
+          <li><a href="/entry" class="homeNavbar">New Journal Entry</a></li>
+          <li><a href="/archive" class="homeNavbar">Journal Entries</a></li>
+          <li><a href="/wishlist" class="active-home">Future Travels Wishlist</a></li>
+        </ul>
+      </div>
+    </nav>
 
 
   <div class="container" class="form-group" id="wishlistBody">

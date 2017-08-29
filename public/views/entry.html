@@ -1,19 +1,19 @@
-<div class="jumbotron" id="entryJumbotron">
-  <h1 id="entryHeader">New Journal Entry</h1>
-</div>
+<header class="header" id="homeHeader"><strong><h1>Travelogue</h1></strong></header>
 
 
 <div ng-controller="EntryController as ec" class="entryBackgroundDiv">
 
 
-<div class="container">
-  <nav class="navbar" id="entryNavbar">
-    <strong><a href="/home">Home</a></strong>
-    <strong><a href="/entry" class="active">New Journal Entry</a></strong>
-    <strong><a href="/archive">Journal Entries</a></strong>
-    <strong><a href="/wishlist">Future Travels Wishlist</a></strong>
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav">
+        <li><a href="/home" class="homeNavbar">Home</a></li>
+        <li><a href="/entry" class="active-home">New Journal Entry</a></li>
+        <li><a href="/archive" class="homeNavbar">Journal Entries</a></li>
+        <li><a href="/wishlist" class="homeNavbar">Future Travels Wishlist</a></li>
+      </ul>
+    </div>
   </nav>
-</div>
 
 
   <div class="container" class="form-group" id="entryBody">

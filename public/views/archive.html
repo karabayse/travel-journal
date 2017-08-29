@@ -1,18 +1,19 @@
-<div class="jumbotron" id="archiveJumbotron">
-  <h1>Journal Entries</h1>
-</div>
+<header class="header" id="homeHeader"><strong><h1>Travelogue</h1></strong></header>
 
 
 <div ng-controller="EntryController as ec" id="archiveBackgroundDiv">
-<div class="container" id="archiveBody">
+<div id="archiveBody">
 
-  <nav class="navbar" id="archiveNavbar">
-    <strong><a href="/home">Home</a></strong>
-    <strong><a href="/entry">New Journal Entry</a></strong>
-    <strong><a href="/archive" class="active">Journal Entries</a></strong>
-    <strong><a href="/wishlist">Future Travels Wishlist</a></strong>
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav">
+        <li><a href="/home" class="homeNavbar">Home</a></li>
+        <li><a href="/entry" class="homeNavbar">New Journal Entry</a></li>
+        <li><a href="/archive" class="active-home">Journal Entries</a></li>
+        <li><a href="/wishlist" class="homeNavbar">Future Travels Wishlist</a></li>
+      </ul>
+    </div>
   </nav>
-
 
 
   <div class="card" id="journalEntries" data-ng-init="ec.showEntries()">

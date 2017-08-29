@@ -73,22 +73,20 @@ footer {
   text-align: center;
   color: DarkBlue;
   border: border-bottom;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-/*.navbar {
-  margin-left:50px;
-  margin-right:50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-family: Helvetica;
-}*/
+.navbar {
+
+}
 
 .navbar a {
   text-align: center;
   font-family: Helvetica;
-  font-size: 125%;
+  font-size: 100%;
   letter-spacing: 2px;
-  margin-left:30px;
+  margin-left:100px;
   margin-right:30px;*/
   padding-left:30px;
   padding-right:30px;
@@ -128,23 +126,13 @@ a.active {
 
 /**** ENTRY ****/
 
-#entryJumbotron {
-  text-align: center;
-  color: White;
-  font-family: Helvetica;
-  letter-spacing: 3px;
-  background-image: url("../styles/images/cloth.jpg");
-  /*background-image: url("../styles/waterfall.jpg");
-  background-size: cover;*/
-}
-
 #entryNavbar {
   text-align: center;
 }
 
 .entryBackgroundDiv {
-  margin-top: -2.5em;
-  min-height: 1000px;
+  margin-top: 30px;
+  min-height: 753px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
@@ -154,14 +142,6 @@ a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-#journalEntriesHeader {
-  font-family: cursive;
-}
-
-#journalEntries {
-  font-family: Georgia;
 }
 
 #mapholder {
@@ -189,21 +169,13 @@ img:hover {
 
 /**** ARCHIVE ****/
 
-#archiveJumbotron {
-  text-align: center;
-  color: White;
-  font-family: Helvetica;
-  letter-spacing: 3px;
-  background-image: url("../styles/images/stripes.jpg");
-}
-
 #archiveNavbar {
   text-align: center;
 }
 
 #archiveBackgroundDiv {
-  margin-top: -2.5em;
-  min-height: 1000px;
+  margin-top: 30px;
+  min-height: 753px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
@@ -234,19 +206,13 @@ img:hover {
   max-height: 300px;
 }
 
+
+
 /***** WISHLIST *****/
 
-#wishlistJumbotron {
-  text-align: center;
-  color: White;
-  font-family: Helvetica;
-  letter-spacing: 3px;
-  background-image: url("../styles/images/steps.png");
-}
-
 #wishlistBackgroundDiv {
-  margin-top: -2.5em;
-  min-height: 1000px;
+  margin-top: 30px;
+  min-height: 753px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
