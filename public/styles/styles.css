@@ -75,13 +75,13 @@ footer {
   border: border-bottom;
 }
 
-.navbar {
+/*.navbar {
   margin-left:50px;
   margin-right:50px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: Helvetica;
-}
+}*/
 
 .navbar a {
   text-align: center;
