@@ -64,6 +64,7 @@ footer {
 .navbar navbar-inverse navbar-static-top {
   margin-left: 0px;
   margin-right: 0px;
+  max-height: 100px;
 }
 
 #homeNavbar {
@@ -74,8 +75,6 @@ footer {
   text-align: center;
   color: DarkBlue;
   border: border-bottom;
-  /*margin-left: 100px;
-  margin-right: 100px;*/
 }
 
 .navbar a {
@@ -205,7 +204,6 @@ img:hover {
 }
 
 
-
 /***** WISHLIST *****/
 
 #wishlistBackgroundDiv {
@@ -215,7 +213,6 @@ img:hover {
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     );
-  /*background-color: FloralWhite;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
