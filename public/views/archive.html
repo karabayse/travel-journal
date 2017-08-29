@@ -1,10 +1,9 @@
 <header class="header" id="homeHeader"><strong><h1>Travelogue</h1></strong></header>
 
-
 <div ng-controller="EntryController as ec" id="archiveBackgroundDiv">
-<div id="archiveBody">
 
-  <nav class="navbar navbar-inverse">
+
+  <nav class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-header">
       <ul class="nav navbar-nav">
         <li><a href="/home" class="homeNavbar">Home</a></li>
@@ -42,10 +41,11 @@
       <button class="btn btn-default btn-xs" id="deleteButton" ng-click="ec.delete($index)">Delete Entry</button>
     </div>
   </div>
-  </div>
+
 
 <div id="archiveFooter">
-<!-- <footer></footer> -->
+
+
 </div>
 
 </div>
