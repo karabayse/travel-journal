@@ -60,7 +60,7 @@ footer {
   margin-left: 100px;
 }
 
-.navbar navbar-inverse {
+.navbar navbar-inverse navbar-static-top {
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -73,19 +73,18 @@ footer {
   text-align: center;
   color: DarkBlue;
   border: border-bottom;
-  margin-left: 100px;
-  margin-right: 100px;
+  /*margin-left: 100px;
+  margin-right: 100px;*/
 }
 
 .navbar a {
   text-align: center;
   font-family: Helvetica;
   font-size: 100%;
-  letter-spacing: 2px;
-  margin-left:100px;
-  margin-right:30px;*/
-  padding-left:30px;
-  padding-right:30px;
+  letter-spacing: 1px;
+  margin-left: 85px;
+  margin-right: 85px;
+  display: inline-block;
 }
 
 a.active-home {
