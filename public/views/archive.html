@@ -15,7 +15,7 @@
   </nav>
 
 
-  <div class="card" id="journalEntries" data-ng-init="ec.showEntries()">
+  <div class="container" class="card" id="journalEntries" data-ng-init="ec.showEntries()">
     <br>
     <div class="col-sm-3" ng-repeat="data in ec.entries">
       {{ data.date | date: "MMMM dd, yyyy" }}
