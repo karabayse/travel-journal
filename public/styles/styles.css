@@ -61,30 +61,10 @@ footer {
   margin-left: 100px;
 }
 
-.navbar navbar-inverse navbar-static-top {
-  margin-left: 0px;
-  margin-right: 0px;
-  max-height: 100px;
-  text-align: center;
-}
-
-#homeNavbar {
-  text-align: center;
-}
-
-.homeNavbar {
-  text-align: center;
-  color: DarkBlue;
-  border: border-bottom;
-}
-
 .navbar a {
   font-family: Helvetica;
   font-size: 100%;
   letter-spacing: 1px;
-  margin-left: 85px;
-  margin-right: 85px;
-  display: inline-block;
 }
 
 a.active-home {
@@ -92,9 +72,8 @@ a.active-home {
     text-decoration: underline;
 }
 
-a.active {
-    color: DarkBlue;
-    text-decoration: underline;
+li {
+  margin-left: 255px;
 }
 
 .homeBackgroundDiv {
@@ -137,7 +116,7 @@ a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: LightCyan;
+  background-color: MintCream;
 }
 
 #mapholder {
@@ -221,7 +200,7 @@ img:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: LightCyan;
+  background-color: AliceBlue;
 }
 
  #wishlistHeader {
