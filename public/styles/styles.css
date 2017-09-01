@@ -125,7 +125,7 @@ li {
 }
 
 .card {
-  max-height: 1000px;
+  min-height: 1000px;
   overflow: auto;
 }
 
@@ -179,6 +179,7 @@ img:hover {
   color: White;
   background-color: CadetBlue;
   font-family: Helvetica;
+  min-height: 400px
 }
 
 .img {
