@@ -1,6 +1,6 @@
 /**** LOGIN ****/
 
-#loginHeader {
+#travelogueHeader {
   font-family: Helvetica;
   letter-spacing: 2px;
   background-size: 50% 100%;
@@ -54,14 +54,9 @@ footer {
 
 /**** HOME ****/
 
-#homeHeader {
-  font-family: Helvetica;
-  letter-spacing: 2px;
-  background-size: 50% 100%;
-  margin-left: 100px;
-}
-
 .navbar a {
+  color: White;
+  text-align: center;
   font-family: Helvetica;
   font-size: 100%;
   letter-spacing: 1px;
@@ -70,10 +65,12 @@ footer {
 a.active-home {
     color: White;
     text-decoration: underline;
+    display: inline-block;
 }
 
 li {
   margin-left: 255px;
+  margin-right: 25px;
 }
 
 .homeBackgroundDiv {
@@ -99,10 +96,6 @@ li {
 
 
 /**** ENTRY ****/
-
-#entryNavbar {
-  text-align: center;
-}
 
 .entryBackgroundDiv {
   margin-top: 30px;
@@ -147,10 +140,6 @@ img:hover {
 
 
 /**** ARCHIVE ****/
-
-#archiveNavbar {
-  text-align: center;
-}
 
 #archiveBackgroundDiv {
   margin-top: 30px;
@@ -203,7 +192,3 @@ img:hover {
   background-size: cover;
   background-color: AliceBlue;
 }
-
- #wishlistHeader {
-   font-family: Helvetica;
- }
