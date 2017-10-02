@@ -60,17 +60,13 @@ footer {
   font-family: Helvetica;
   font-size: 100%;
   letter-spacing: 1px;
+  margin-left: 85px;
 }
 
 a.active-home {
     color: White;
     text-decoration: underline;
     display: inline-block;
-}
-
-li {
-  margin-left: 255px;
-  margin-right: 25px;
 }
 
 .homeBackgroundDiv {
