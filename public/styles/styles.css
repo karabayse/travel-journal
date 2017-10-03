@@ -9,7 +9,6 @@
 
 .loginDiv {
   font-family: Helvetica;
-  padding-top: 20px;
   margin-left: 100px;
 }
 
@@ -56,11 +55,9 @@ footer {
 
 .navbar a {
   color: White;
-  text-align: center;
   font-family: Helvetica;
   font-size: 100%;
   letter-spacing: 1px;
-  margin-left: 85px;
 }
 
 a.active-home {
