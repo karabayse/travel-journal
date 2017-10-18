@@ -25,13 +25,6 @@ Technologies
 - [X] Google Maps API
 - [X] Filestack
 
-
-Stretch Goals
--------------
-- [ ] Mobile App for IOS and Android
-- [ ] Geolocation Aggregator
-- [X] Heroku
-
 Application URL
 ---------------
 Travelogue launched on: https://travelogue-solo-project.herokuapp.com
